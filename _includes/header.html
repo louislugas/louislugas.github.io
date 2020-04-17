@@ -1,0 +1,60 @@
+<header class="site-header">
+
+    <div class="wrapper">
+        <a id="title" href="{{ "/" | relative_url }}">louislugas.com</a>
+        <div class="nav">
+            <div id="project" onclick="tP()">Project</div>
+            <div id="about" onclick="tA()">About</div>
+        </div>
+
+    </div>
+    <script>
+        function tP() {
+            var x = document.getElementById("project")
+            var y = document.getElementById("about")
+            var z = document.getElementById("about-wrapper")
+            var a = document.getElementById("title")
+            var b = document.getElementById("outer")
+
+            if (y.style.backgroundPosition === "100% center") {
+                b.style.pointerEvents="none"
+                a.style.backgroundPosition = "0%"
+                z.style.right = "-100%"
+                y.style.fontWeight = 300;
+                y.style.backgroundPosition = "0%";
+                x.style.fontWeight = 800;
+                x.style.backgroundPosition = "0%";
+            };
+            };
+
+        function tA() {
+            var x = document.getElementById("project")
+            var y = document.getElementById("about")
+            var z = document.getElementById("about-wrapper")
+            var a = document.getElementById("title")
+            var b = document.getElementById("outer")
+            var body = document.getElementsByTagName("BODY")[0];
+
+            if (y.style.backgroundPosition === "" | y.style.backgroundPosition ==="0% center") {
+                b.style.pointerEvents="auto"
+                a.style.backgroundPosition = "100%"
+                z.style.right = "0%"
+                y.style.fontWeight = 800;
+                y.style.backgroundPosition = "100%";
+                x.style.fontWeight = 300;
+                x.style.backgroundPosition = "100%";
+                body.style.overflow = "hidden";
+            } else if (y.style.backgroundPosition === "100% center") {
+                b.style.pointerEvents="none"
+                a.style.backgroundPosition = "0%"
+                z.style.right = "-100%"
+                y.style.fontWeight = 300;
+                y.style.backgroundPosition = "0%";
+                x.style.fontWeight = 800;
+                x.style.backgroundPosition = "0%";
+                body.style.overflow = "auto";
+            };
+            };
+    </script>
+
+</header>

@@ -1,0 +1,18 @@
+.site-footer {
+    padding-top:10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: $black;
+}
+
+.site-footer .wrapper {
+    margin:auto;
+    width:90%;
+    color: $secondary-color;
+}
+
+.footer-col {
+    font-family: $secondary-font;
+    font-size: 11px;
+    text-align: center;
+}
