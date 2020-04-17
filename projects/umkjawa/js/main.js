@@ -16,7 +16,7 @@ var group;
 
 var a = 0;
 
-var url = '/umk-sbh-jawa-map/geojson/UMKSBHJawa.geojson';
+var url = '/geojson/UMKSBHJawa.geojson';
 
 var projection = d3.geoMercator()
   .scale(6000)
@@ -237,7 +237,7 @@ function inputDataform(){
 
   //DATA PRINT
   $.ajax({
-    url: "/umk-sbh-jawa-map/geojson/UMKSBHJawa.geojson",
+    url: "/geojson/UMKSBHJawa.geojson",
     dataType:  "json",
     type: "get",
     cache: false,
@@ -379,7 +379,7 @@ function inputDataform1(){
 
   //DATA PRINT
   $.ajax({
-    url: "/umk-sbh-jawa-map/geojson/UMKSBHJawa.geojson",
+    url: "geojson/UMKSBHJawa.geojson",
     dataType:  "json",
     type: "get",
     cache: false,
