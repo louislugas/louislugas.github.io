@@ -16,7 +16,7 @@ var group;
 
 var a = 0;
 
-var url = '/geojson/UMKSBHJawa.geojson';
+var url = 'louislugas.github.io/projects/umkjawa/geojson/UMKSBHJawa.geojson';
 
 var projection = d3.geoMercator()
   .scale(6000)
@@ -90,7 +90,7 @@ function populateKabkot() {
   */
  //LOAD JSON INTO VARIABLE
  $.ajax({
-   url: "/geojson/UMKSBHJawa.geojson",
+   url: "louislugas.github.io/projects/umkjawa/geojson/UMKSBHJawa.geojson",
    dataType:  "json",
    type: "get",
    cache: false,
@@ -122,7 +122,7 @@ function populateKabkot1() {
   */
  //LOAD JSON INTO VARIABLE
  $.ajax({
-   url: "/geojson/UMKSBHJawa.geojson",
+   url: "louislugas.github.io/projects/umkjawa/geojson/UMKSBHJawa.geojson",
    dataType:  "json",
    type: "get",
    cache: false,
@@ -237,7 +237,7 @@ function inputDataform(){
 
   //DATA PRINT
   $.ajax({
-    url: "/geojson/UMKSBHJawa.geojson",
+    url: "louislugas.github.io/projects/umkjawa/geojson/UMKSBHJawa.geojson",
     dataType:  "json",
     type: "get",
     cache: false,
@@ -379,7 +379,7 @@ function inputDataform1(){
 
   //DATA PRINT
   $.ajax({
-    url: "/geojson/UMKSBHJawa.geojson",
+    url: "louislugas.github.io/projects/umkjawa/geojson/UMKSBHJawa.geojson",
     dataType:  "json",
     type: "get",
     cache: false,
