@@ -84,13 +84,13 @@ $("#play").click(function() {
 function populateKabkot() {
   var ele = document.getElementById("inputGroupKabkot");
   /*  TUTORIAL JQUERY LOAD JSON
-  $.getJSON("/geojson/UMKSBHJawa.geojson", function(data) {
+  $.getJSON("/GeoJSON/UMKSBHJawa.geojson", function(data) {
     //console.log(data.features[100].properties.KABKOT);
   });
   */
  //LOAD JSON INTO VARIABLE
  $.ajax({
-   url: "/umkjawa/geojson/UMKSBHJawa.geojson",
+   url: "/geojson/UMKSBHJawa.geojson",
    dataType:  "json",
    type: "get",
    cache: false,
@@ -116,13 +116,13 @@ function populateKabkot() {
 function populateKabkot1() {
   var ele = document.getElementById("inputGroupKabkot2");
   /*  TUTORIAL JQUERY LOAD JSON
-  $.getJSON("/geojson/UMKSBHJawa.geojson", function(data) {
+  $.getJSON("/GeoJSON/UMKSBHJawa.geojson", function(data) {
     //console.log(data.features[100].properties.KABKOT);
   });
   */
  //LOAD JSON INTO VARIABLE
  $.ajax({
-   url: "/umk-sbh-jawa-map/geojson/UMKSBHJawa.geojson",
+   url: "/geojson/UMKSBHJawa.geojson",
    dataType:  "json",
    type: "get",
    cache: false,
@@ -379,7 +379,7 @@ function inputDataform1(){
 
   //DATA PRINT
   $.ajax({
-    url: "geojson/UMKSBHJawa.geojson",
+    url: "/geojson/UMKSBHJawa.geojson",
     dataType:  "json",
     type: "get",
     cache: false,
