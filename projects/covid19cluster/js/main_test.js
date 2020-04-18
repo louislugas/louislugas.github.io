@@ -35,7 +35,7 @@ zoom_handler(svg);
 var radioValue;
 
 //data url
-var url = "louislugas.github.io/projects/covid19cluster/json/kasus-corona-indonesia.json";
+var url = "../projects/covid19cluster/json/kasus-corona-indonesia.json";
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //UPDATE FORCE NORMAL
