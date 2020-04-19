@@ -9,7 +9,7 @@ workfolder: /projects/wisata
 image: header-wisman-03.jpg
 ---
 
-In the late 2019, I found and watched an amusing infographic [video][video-fallen] about the victim of World War II created by [Neil Halloran][neil-halloran]. I tried to find how he achieve such an extraordinary visualization, an interactive video. Then I found about [d3.js][d3], a sophisticated JavaScript to create an interactive data visualization, close to what I thought Neil Halloran did (later I found he used [three.js][three]).
+In the late 2019, I found and watched an amusing infographic [video][video-fallen] about the victim of World War II created by [Neil Halloran][neil-halloran]. I tried to find how he achieve such an extraordinary visualization, an interactive video. Then I found about [d3.js][d3], a sophisticated JavaScript to create an interactive data visualization, close to what I thought Neil Halloran did (later I found he used [three.js][three].
 
 At the same time, simple animated data-viz was popular on the social media. It was the bar race chart. Many people were obsessed with these, and surprisingly is easy to make. One of the popular tools on the internet is [flourish][flourish]. It's free, has a lot of chart option, interactive, and has a easy learning curve, anybody can make an interesting interactive chart by their own.
 
