@@ -65,15 +65,7 @@ a {
     font-weight: 600;
 }
 
-a:visited {
-    text-decoration: none;
-    color: $hyperlink;
-}
-
 a .post-link {
-    color: $black;
-}
-a:visited .post-link {
     color: $black;
 }
 
