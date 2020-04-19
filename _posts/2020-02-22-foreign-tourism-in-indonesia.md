@@ -8,26 +8,22 @@ link: /foreign-tourism/
 workfolder: /projects/wisata
 image: header-wisman-03.jpg
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+In the late 2019, I found and watched an amusing infographic [video][video-fallen] about the victim of World War II created by [Neil Halloran][neil-halloran]. I tried to find how he achieve such an extraordinary visualization, an interactive video. Then I found about [d3.js][d3], a sophisticated JavaScript to create an interactive data visualization, close to what I thought Neil Halloran did (later I found he used [three.js][three]).
 
-`YEAR-MONTH-DAY-title.MARKUP`
+At the same time, simple animated data-viz was popular on the social media. It was the bar race chart. Many people were obsessed with these, and surprisingly is easy to make. One of the popular tools on the internet is [flourish][flourish]. It's free, has a lot of chart option, interactive, and has a easy learning curve, anybody can make an interesting interactive chart by their own.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+But personally, flourish still have a limited option. They offered more option to explore, but it's come with a price, an expensive one. So, I decided to take the hard way: learn d3.js and try to make any kind data visualization I want from scratch. Yet, I didn't have much JavaScript basic, so it's quite hard to follow any tutorial on the internet. But that's the art of studying, right?
 
-Jekyll also offers powerful support for code snippets:
+The first data-viz I try to make is the one and only: "Bar Race Chart". Bar chart (and line chart) is the simplest chart using d3.js, even any d3.js tutorial start with making a bar chart. The "race" animation itself was another challenge. Since I work in a news company, I ask one of my researcher friend for a simple dataset from a published article that contained an annual data series to it, so I can animated. So she gave me the dataset about annual foreign tourism trend in Indonesia. The article can be read [here][article]. The article itself already have a bar race chart from the same dataset, made by the researcher team with flourish.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+The original chart was plain and simple, and the most care about was the design standard. I usually made a static infographic following some design standard such as standard font, aspect ratio, and company logo. It was all determined by the art director. the flourish chart can't fit the given standard. Another thing I want to improve from the original chart was the animation interactivity. Original flourish bar chart are automatically played and looped, and I want to give more control for it such as pause, play, next, and previous button. Later I realized it was a hell of code.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+After days of coding back and forth, many errors I don't even know why, reading and asking multiple tutorials and documentation, I finished my first d3.js bar race chart. It still have many flaws here and there, yet I done the most of the features I planned to make, and I'm proud of myself to finish it
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[video-fallen]: https://www.youtube.com/watch?v=DwKPFT-RioU&t=55s  
+[neil-halloran]: https://twitter.com/neilhalloran?lang=en
+[d3]: https://d3js.org/
+[three]: https://threejs.org/
+[flourish]: https://flourish.studio/
+[article]: https://tirto.id/kunjungan-wisman-malaysia-paling-banyak-inggris-paling-royal-ehKV
