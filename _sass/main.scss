@@ -73,7 +73,7 @@ a:visited {
 a .post-link {
     color: $black;
 }
-a .post-link:visited {
+a:visited .post-link {
     color: $black;
 }
 
