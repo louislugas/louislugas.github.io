@@ -73,6 +73,9 @@ a:visited {
 a .post-link {
     color: $black;
 }
+a .post-link:visited {
+    color: $black;
+}
 
 ul {
     list-style-type: none;
