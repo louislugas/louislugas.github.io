@@ -8,26 +8,15 @@ link: /covid19-cluster/
 workfolder: /projects/covid19cluster
 image: header-c19cluster-03.jpg
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+The official 1st and 2nd case of COvid-19 victim in Indonesia were announced in 2 March 2020. These first 2 cases data were published with details of how she got the virus, and how she could infected others by the places she had been. This kind of data was really helpful for the citizen to take precaution.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+This project are inspired by a Singaporean, a computer teacher, who made [this][web] by himself, just for the sake of helping others with giving information with more clarity. The network graph are the perfect solution to depict how victims are connected with other victims, and the more details the data are, the more citizen will be aware of their neighborhood.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+But the government stopped for being transparent about these data. Since 15 March 2020, the data details were gradually eliminated. Until now, the government only provide the total numbers of the case. They're even not giving any data about age, sex, and where they could've been before the infection. And the key for a good network graph are a detailed dataset. Since then, my network graph was not relevant anymore.
 
-Jekyll also offers powerful support for code snippets:
+At 21 March 2020, the National Health Ministry made a same network graph, using my code without permission. Surprisingly they had more detailed data than mine, since I got the official data only from the Health Ministry. But when I checked their data, there were so much missing or data error, double input, and different case number. The funny part, I realized my code was inefficient for handling live large dataset because I use native JSON, so I had to type it all the data, no matter how much is it. And they (Health Ministry) still used my code.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Unfortunately, at 23 March 2020, the web made by Health Ministry was taken down, and because of lack of data source, I also stopped my update in 24 March 2020.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[web]: https://co.vid19.sg/singapore/cases
