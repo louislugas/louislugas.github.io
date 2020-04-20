@@ -8,26 +8,17 @@ link: /covid19/
 workfolder: /projects/covid19
 image: header-covid19-03.jpg
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+The brink of the viral pandemic of Covid-19 started in Wuhan, China, December 2019. This novel virus can causes symptoms similar to influenza, such as cough and sneezing. The worst symptoms cause by this virus are pneumonia and can lead to mortality. The victims number grow exponential daily, mainly in China, but also in other Asian countries.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+Many Asian country leaders try their best to contain the virus. Vietnam, Taiwan, Singapore, and South Korea are taking decisions in a blink. While the other started to act, yet the victims were still little in numbers, Indonesian government denied any cases.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+These projects are inspired by Reuters Graphics [report][article] about the South Korean Covid-19 victims biggest cluster. The graphic report was static but clear, yet it is responsive up to 5 screen size. So they have to produce 5 type of infographics for each screen size, either by coding, or just pure graphic design. So I made this simple web responsive infographic, based on 2 articles that have been made before, [here][article-1] and [here][article-2].
 
-Jekyll also offers powerful support for code snippets:
+The standard infographics I made was 9:16, either viewed on mobile or desktop. So I remade the same infographic into 5 screen size based on the Reuters Graphics used. For the latter infographic, about the government officials response, I use the [AOS (Animate on Scroll)][aos] by [Michał Sajnóg][michalsnik],and of course with a responsive layout for each screen size.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[article]: https://graphics.reuters.com/CHINA-HEALTH-SOUTHKOREA-CLUSTERS/0100B5G33SB/index.html
+[article-1]: https://tirto.id/teledor-penanganan-wabah-covid-19-di-indonesia-eDPG
+[article-2]: https://tirto.id/salah-kaprah-pemerintah-berujung-kepanikan-massal-terhadap-covid-19-eDRU
+[aos]: https://michalsnik.github.io/aos/
+[michalsnik]: https://github.com/michalsnik
