@@ -6,6 +6,11 @@
 
     .post-list {
         width:$s-xs-1;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .post-text {
+        margin-top: auto;
     }
 
     .about-content {
@@ -121,6 +126,7 @@
 
     .post-list {
         width:$s-s-1;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .about-content {
@@ -211,6 +217,7 @@
 
     .post-list {
         width:$s-m-1;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .about-content {
