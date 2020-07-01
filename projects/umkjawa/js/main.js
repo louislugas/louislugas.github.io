@@ -179,18 +179,18 @@ function inputDataform(){
 
   var anchorPoint;
 
-  if (inputDewasa == 1 && inputAnak == 0) {document.getElementById("family").src = "Icon-08.svg";}
-  else if (inputDewasa == 1 && inputAnak == 1) {document.getElementById("family").src = "Icon-07.svg";}
-  else if (inputDewasa == 1 && inputAnak == 2) {document.getElementById("family").src = "Icon-06.svg";}
-  else if (inputDewasa == 1 && inputAnak == 3) {document.getElementById("family").src = "Icon-05.svg";}
-  else if (inputDewasa == 2 && inputAnak == 0) {document.getElementById("family").src = "Icon-01.svg";}
-  else if (inputDewasa == 2 && inputAnak == 1) {document.getElementById("family").src = "Icon-02.svg";}
-  else if (inputDewasa == 2 && inputAnak == 2) {document.getElementById("family").src = "Icon-03.svg";}
-  else if (inputDewasa == 2 && inputAnak == 3) {document.getElementById("family").src = "Icon-04.svg";}
-  else if (inputDewasa == 3 && inputAnak == 0) {document.getElementById("family").src = "Icon-01.svg";}
-  else if (inputDewasa == 3 && inputAnak == 1) {document.getElementById("family").src = "Icon-02.svg";}
-  else if (inputDewasa == 3 && inputAnak == 2) {document.getElementById("family").src = "Icon-03.svg";}
-  else if (inputDewasa == 3 && inputAnak == 3) {document.getElementById("family").src = "Icon-04.svg";};
+  if (inputDewasa == 1 && inputAnak == 0) {document.getElementById("family").src = "/projects/umkjawa/img/Icon-08.svg";}
+  else if (inputDewasa == 1 && inputAnak == 1) {document.getElementById("family").src = "/projects/umkjawa/img/Icon-07.svg";}
+  else if (inputDewasa == 1 && inputAnak == 2) {document.getElementById("family").src = "/projects/umkjawa/img/Icon-06.svg";}
+  else if (inputDewasa == 1 && inputAnak == 3) {document.getElementById("family").src = "/projects/umkjawa/img/Icon-05.svg";}
+  else if (inputDewasa == 2 && inputAnak == 0) {document.getElementById("family").src = "/projects/umkjawa/img/Icon-01.svg";}
+  else if (inputDewasa == 2 && inputAnak == 1) {document.getElementById("family").src = "/projects/umkjawa/img/Icon-02.svg";}
+  else if (inputDewasa == 2 && inputAnak == 2) {document.getElementById("family").src = "/projects/umkjawa/img/Icon-03.svg";}
+  else if (inputDewasa == 2 && inputAnak == 3) {document.getElementById("family").src = "/projects/umkjawa/img/Icon-04.svg";}
+  else if (inputDewasa == 3 && inputAnak == 0) {document.getElementById("family").src = "/projects/umkjawa/img/Icon-01.svg";}
+  else if (inputDewasa == 3 && inputAnak == 1) {document.getElementById("family").src = "/projects/umkjawa/img/Icon-02.svg";}
+  else if (inputDewasa == 3 && inputAnak == 2) {document.getElementById("family").src = "/projects/umkjawa/img/Icon-03.svg";}
+  else if (inputDewasa == 3 && inputAnak == 3) {document.getElementById("family").src = "/projects/umkjawa/img/Icon-04.svg";};
 
   var umkKabkot;
   var pendaptanKabkot;
