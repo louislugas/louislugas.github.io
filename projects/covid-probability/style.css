@@ -1,0 +1,159 @@
+.container {
+    margin: 0;
+    width: 100%;
+    height: 640px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.credit {
+    background-color: indianred;
+    position: absolute;
+}
+
+.logo {
+    background-color: lightgoldenrodyellow;
+    position: absolute;
+}
+
+.sumber {
+    background-color: lightsalmon;
+    position: absolute;
+    text-align: right;
+    font-family: Lato, sans-serif;
+}
+
+.creditstrong {
+    font-weight: 800;
+}
+
+.option {
+    color: white;
+    position: absolute;
+    font-family: Lato, sans-serif;
+}
+
+#title {
+    color: lightsalmon;
+    position: absolute;
+    font-family: Lato, sans-serif;
+    font-weight: 800;
+}
+
+.highlight {
+    color: white;
+}
+
+.acak {
+    color: black;
+    position: absolute;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    background-color: lightsalmon;
+    padding: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#provinsi {
+    background-color: lightsalmon;
+    color: black;
+    border: 0;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#provinsi > option:hover {
+    background-color: white;
+}
+
+@media (max-width:500px) { /* MOBILE */
+    .credit {
+        right:20px;
+        top:20px;
+    }
+    
+    .logo {
+        width: 30px;
+        height: 38px;
+        right: 0px;
+    }
+    
+    .sumber {
+        width: 120px;
+        height: 38px;
+        right: 39px;
+        font-size: 8pt;
+    }
+
+    .option {
+        font-size: 9pt;
+        left: 20px;
+        top: 105px;
+    }
+
+    .acak {
+        font-size: 9pt;
+        right: 20px;
+        top: 105px;
+        width: 35px;
+        text-align: center;
+    }
+    
+    #provinsi {
+        font-size: 9pt;
+        font-weight: 600px;
+    }
+
+    #title {
+        font-size: 16pt;
+        left: 20px;
+        top: 20px;
+    }
+} /* END --------------------------- MOBILE */
+
+@media (min-width:501px) { /* DESKTOP */
+    .credit {
+        right:32px;
+        top:32px;
+    }
+    
+    .logo {
+        width: 47px;
+        height: 59px;
+        right: 0px;
+    }
+    
+    .sumber {
+        width: 180px;
+        height: 38px;
+        right: 59px;
+        font-size: 12pt;
+    }
+
+    .option {
+        font-size: 14pt;
+        left: 32px;
+        top: 160px;
+    }
+
+    .acak {
+        font-size: 14pt;
+        right: 32px;
+        top: 160px;
+        width: 60px;
+        text-align: center;
+    }
+
+    #provinsi {
+        font-size: 13pt;
+        font-weight: 600;
+    }
+
+    #title {
+        font-size: 24pt;
+        left: 32px;
+        top:32px;
+    }
+} /* END ---------------------------- DESKTOP */

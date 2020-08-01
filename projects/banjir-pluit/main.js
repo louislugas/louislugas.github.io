@@ -279,7 +279,7 @@ $prev.on('click',function(){
 })
 
 if ( slide < 541 ) { // UKURAN KECIL RESPONSIVE ////////////////////////////////////////////////////////////////////////////////////
-    console.log(slide)
+    console.log(slide) // cek lebar
     //slider value
     var wplus = slide;
     var w = 0.8 * wplus;
