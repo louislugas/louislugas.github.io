@@ -73,7 +73,7 @@ var legendData = [
     {
         text: 'Positif Covid-19',
         color: 'red',
-        r: 0.015 * radius
+        r: 0.018 * radius
     },
     {
         text: 'Sampel populasi',
@@ -131,6 +131,10 @@ var legendtext = g1
 
 document.addEventListener("DOMContentLoaded",() => {
     sampling()
+})
+
+document.getElementById('acak').addEventListener('click', ()=> {
+    reload()
 })
 
 //////////////////////////////////////////////////////////////////////////
@@ -200,7 +204,7 @@ function sampling() {
 
     //console.log(shuffleArray)
 
-    var red = 0.015 * radius
+    var red = 0.018 * radius
     var blue = 0.007 * radius
 
     var g = svg.append('g')
@@ -241,5 +245,8 @@ function sampling() {
     .style('stroke-opacity',1)
 
 }
+
+
+
 
 
