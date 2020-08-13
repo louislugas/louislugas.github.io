@@ -74,6 +74,11 @@
 }
 
 @media (max-width:500px) { /* MOBILE */
+    .container {
+        width: 376px;
+        height: 700px;
+    }
+
     .credit {
         right:20px;
         top:20px;
@@ -119,6 +124,11 @@
 } /* END --------------------------- MOBILE */
 
 @media (min-width:501px) { /* DESKTOP */
+    .container {
+        width: 560px;
+        height: 850px;
+    }
+    
     .credit {
         right:32px;
         top:32px;

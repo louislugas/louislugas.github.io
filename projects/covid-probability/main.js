@@ -1,7 +1,7 @@
 //RESPONSIVE TIRTO MOBILE-DESKTOP //////////////////////////////
 var container = document.querySelector('.container')          //
-var w = container.offsetWidth                                 //
-var h = container.offsetHeight                                //
+var w = parseInt(window.getComputedStyle(container).width)
+var h = parseInt(window.getComputedStyle(container).height)
 var gw, gh;                                                   //
 var font, space, mult, left, top;
                                                               //
@@ -9,11 +9,7 @@ var font, space, mult, left, top;
                                                               //
 var radius // infographic radius                              //
                                                               //
-if ( w < h ) { // MOBILE                                      //
-    container.style.height = '600px'                          //
-    container.style.width = '330px'                           //
-    w = container.offsetWidth                                 //
-    h = container.offsetHeight                                //
+if ( h == 700 ) { // MOBILE                               //
     radius = w * 0.46                                         //
     gw = w/2                                                  //
     gh = h/2                                                  //
@@ -23,11 +19,7 @@ if ( w < h ) { // MOBILE                                      //
     left = 32
     fromtop = 15
                                                               //
-} else if ( w > h ) { // DESKTOP                              //
-    container.style.height = '850px'                          //
-    container.style.width = '560px'                           //
-    w = container.offsetWidth                                 //
-    h = container.offsetHeight                                //
+} else if ( h == 850 ) { // DESKTOP                       //
     radius = w * 0.46                                         //
     gw = w/2                                                  //
     gh = h/2 + 50                                             //
@@ -245,6 +237,8 @@ function sampling() {
     .style('stroke-opacity',1)
 
 }
+
+// Louis Lugas (c)2020
 
 
 
