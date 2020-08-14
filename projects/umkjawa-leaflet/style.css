@@ -386,8 +386,12 @@ hr {
     }
 
     .legend {
-        line-height: 13pt;
-        font-size: 9pt;
+        line-height: 12px;
+        font-size:8pt;
+    }
+    .legend i {
+        width: 12px;
+        height: 12px;
     }
 }
 
