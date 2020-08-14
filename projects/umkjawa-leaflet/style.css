@@ -384,6 +384,11 @@ hr {
     .ket {
         padding-left: 75px;
     }
+
+    .legend {
+        line-height: 13pt;
+        font-size: 9pt;
+    }
 }
 
 .legend {
