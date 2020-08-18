@@ -309,6 +309,22 @@ layerGroup.addTo(map)
         }
     }
     
+    function calculateUmp(a,b) {
+        if ( a == '31' ) {
+            return b = 4276349
+        } else if ( a == '32' ) {
+            return b = 1810000
+        } else if ( a == '33' ) {
+            return b = 1742015
+        } else if ( a == '34' ) {
+            return b = 1704608
+        } else if ( a == '35' ) {
+            return b = 1768777
+        } else if ( a == '36' ) {
+            return b = 2460996
+        }
+    }
+
     function basicUmkMap() {
 
         function style(d) { // chloropleth styling
@@ -323,28 +339,54 @@ layerGroup.addTo(map)
             }        
         }
 
-        var layer = L.geoJson(data, {style:style}); // add chloropleth to map
+        var layer = L.geoJson(data, {style:style, onEachFeature: onEachFeature}); // add chloropleth to map
+
+        var click = 0
+        ////////////////////// MOUSEOVER ////////////////////
+
+        function highlightFeature(e) {
+            var hl = e.target;
+
+            click = 1
+
+            hl.setStyle({
+                weight: 5,
+                color: '#333',
+                dashArray: '',
+                fillOpacity: 0.7
+            });
+
+            if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                hl.bringToFront();
+            }
+            
+            var upahmin = e.target.feature.properties.umk
+            var rupiah = upahmin.toLocaleString('de-DE')
+            var umpa = calculateUmp(e.target.feature.properties.provno, e.target.feature.properties.umk)
+            var rupiahump = umpa.toLocaleString('de-DE')
+
+            hl.bindPopup(e.target.feature.properties.provinsi+ '<br><strong>' + e.target.feature.properties.kabkot + '</strong><br> UMK : Rp' +rupiah+'<br> UMP : Rp'+ rupiahump)
+            
+        }
+
+        function resetHighlight(e) {
+            click = 0
+            layer.resetStyle(e.target);
+        }
+
+        function onEachFeature(feature, hl) {
+            hl.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight,
+            });
+        }
+
+        
 
         layerGroup.addLayer(layer)
     }
 
     function basicUmpMap() {
-
-        function calculateUmp(a,b) {
-            if ( a == '31' ) {
-                return b = 4276349
-            } else if ( a == '32' ) {
-                return b = 1810000
-            } else if ( a == '33' ) {
-                return b = 1742015
-            } else if ( a == '34' ) {
-                return b = 1704608
-            } else if ( a == '35' ) {
-                return b = 1768777
-            } else if ( a == '36' ) {
-                return b = 2460996
-            }
-        }
 
         function style(d) { // chloropleth styling
         
@@ -358,7 +400,56 @@ layerGroup.addTo(map)
             }        
         }
 
-        var layer = L.geoJson(data, {style:style}); // add chloropleth to map
+        var layer = L.geoJson(data, {style:style, onEachFeature: onEachFeature}); // add chloropleth to map
+
+        var click = 0
+        ////////////////////// MOUSEOVER ////////////////////
+
+        function highlightFeature(e) {
+            var hl = e.target;
+
+            click = 1
+
+            hl.setStyle({
+                weight: 5,
+                color: '#333',
+                dashArray: '',
+                fillOpacity: 0.7
+            });
+
+            if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                hl.bringToFront();
+            }
+
+            var upahmin = e.target.feature.properties.umk
+            var rupiah = upahmin.toLocaleString('de-DE')
+            var umpa = calculateUmp(e.target.feature.properties.provno, e.target.feature.properties.umk)
+            var rupiahump = umpa.toLocaleString('de-DE')
+
+            hl.bindPopup(e.target.feature.properties.provinsi+ '<br><strong>' + e.target.feature.properties.kabkot + '</strong><br> UMK : Rp' +rupiah+'<br> UMP : Rp'+ rupiahump)
+        }
+
+        function resetHighlight(e) {
+            click = 0
+            layer.resetStyle(e.target);
+        }
+
+        function onEachFeature(feature, hl) {
+            if (click == 0) {
+                hl.on({
+                    click: highlightFeature
+                })
+            } else if (click == 1) {
+                hl.on({
+                    click:resetHighlight
+                })
+            }
+
+            hl.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight,
+            });
+        }
 
         layerGroup.addLayer(layer)
         
@@ -367,6 +458,7 @@ layerGroup.addTo(map)
     basicUmkMap()
     
 ///////////////////////////////////////////////////////////////////////////////////
+
 
 ////console.log(Math.min(data.features[0].properties.selisih))
 
@@ -854,6 +946,8 @@ legend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'info legend'),
         grades = [ -2000000, -1000000,-500000, 1, 1000000, 2000000, 4000000]
 
+    div.innerHTML = '<h2 style="margin-top:0">Selisih Upah <Br>dengan Biaya Hidup</h2>'
+
     // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length; i++) {
         div.innerHTML +=
@@ -867,5 +961,6 @@ legend.onAdd = function (map) {
 };
 
 legend.addTo(map);
+
 
 //COPYRIGHT 2020 LOUIS LUGAS WICAKSONO
