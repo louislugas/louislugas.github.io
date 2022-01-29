@@ -91,7 +91,7 @@ var quest3 = [
     'q':'Lahan PT Adaro Energy ada di beberapa daerah ini kecuali..',
     'a':'Sumatera Utara & Bengkulu',
     'b':'Queensland Australia & Sumatera Selatan',
-    'ans':'b'
+    'ans':'a'
   }
 ]
 //Fuganto Widjaja
