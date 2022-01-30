@@ -34,13 +34,13 @@ var quest1 = [
     'ans':'a'
   },
   {
-    'q':'Siapa pemilik PT Kaltim Prima Coal, produsen batubara terbesar di Indonesia?',
+    'q':'Siapa CEO PT Kaltim Prima Coal, produsen batubara terbesar di Indonesia?',
     'a':"Adika Nuraga Bakrie (Anak Aburizal Bakrie)",
     'b':"Boy Thohir (Saudara Erick Thohir)",
     'ans':'a'
   },
   {
-    'q':'Induk perusahaan batubara terbesar di Indonesia yang memproduksi 81,1juta ton tahun 2020 adalah...',
+    'q':'Induk perusahaan batubara terbesar di Indonesia yang memproduksi 81,1 juta ton tahun 2020 adalah...',
     'a':'PT Bumi Resources',
     'b':'PT Sinar Mas',
     'ans':'a'
@@ -103,7 +103,7 @@ var quest4 = [
     'ans':'a'
   },
   {
-    'q':'Siapa bos Sinar Mas Mining Group yang memiliki luas area produksi mencapai 278.802,8 hektar?',
+    'q':'Siapa bos Sinar Mas Mining Group yang memiliki luas area produksi mencapai 278.802,8 hektare?',
     'a':'Sandiaga Uno',
     'b':'Fuganto Widjaja',
     'ans':'b'
@@ -118,7 +118,7 @@ var quest4 = [
 //Garibaldi "Boy" Thohir
 var quest5 = [
   {
-    'q':'Berapa persen kepemilikan saham Boy Thohir di Adaro Energy?',
+    'q':'Berapa persen kepemilikan saham langsung Boy Thohir di Adaro Energy?',
     'a':'43,91%',
     'b':'6,18%',
     'ans':'b'
@@ -167,18 +167,18 @@ var quest7 = [
   },
   {
     'q':'Apa nama perusahaan Luhut Binsar Pandjaitan yang bergerak di bidang tambang batubara?',
-    'a':'PT Toba Sejahtera',
+    'a':'PT Rakabu Sejahtra',
     'b':'PT TBS Energi Utama',
     'ans':'b'
   },
   {
     'q':'Berapa luas lahan batubara milik Luhut Binsar Pandjaitan di Kalimantan Timur?',
-    'a':'7.087 ha',
+    'a':'14.019 ha',
     'b':'76.120 ha',
     'ans':'a'
   },
   {
-    'q':'Laksamana Marsetio, mantan kepala staf TNI Angkatan Laut adalah wakil komisaris utama PT Berau Coal Energy, anak perusahaan Sinar Mas.',
+    'q':'Laksamana Marsetio, penasihat khusus bidang pertahanan dan keamanan Luhut adalah wakil komisaris utama PT Berau Coal Energy, anak perusahaan Sinar Mas.',
     'a':'Benar',
     'b':'Salah',
     'ans':'a'
