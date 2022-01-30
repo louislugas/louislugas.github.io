@@ -49,7 +49,7 @@ var quest1 = [
     'q':'Berikut ini adalah anak usaha PT Bumi Resources, kecuali...',
     'a':'PT Dian Swastika, PT Agung Sentosa, & PT Karya Anak Bangsa',
     'b':'PT Kaltim Prima Coal, PT Arutnim Indonesia, & PT Pendopo Energi Batubara',
-    'ans':'b'
+    'ans':'a'
   }
 ]
 //Agus Lasmono
@@ -1372,3 +1372,26 @@ function randomizer(multiplier) {
   r = Math.floor((Math.random() * m) + 1)
   return r
 } //answer randomizer
+
+//FULL SCREEN
+var fullscreen = $('.full-btn')
+var game = $('.game-container')
+
+fullscreen.click(()=> {
+  openFullscreen(game)
+  console.log('full 1')
+  console.log('1',  game)
+})
+
+/* Function to open fullscreen mode */
+function openFullscreen(elem) {
+  console.log('full 2')
+  console.log('2',  elem)
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
