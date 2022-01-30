@@ -1098,7 +1098,7 @@
   }
   @media screen and (max-width: 510px) {
     .chara {
-      height:70%;
+      height:60%;
     }
     .fa-heart {
       font-size:1.1rem;
@@ -1121,7 +1121,7 @@
       height:50%;
     }
     .quiz-container {
-      height:40%;
+      height:50%;
     }
     .quiz-s {
       height:15%;
@@ -1129,7 +1129,7 @@
   }
   @media screen and (max-width: 360px) {
     .chara {
-      height:65%;
+      height:50%;
     }
     .health-container {
       height:1.6rem;
@@ -1163,7 +1163,7 @@
       height:40%;
     }
     .quiz-container {
-      height:50%;
+      height:55%;
     }
     .quiz-a {
       width:80%;
