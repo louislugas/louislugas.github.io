@@ -11,6 +11,8 @@
 
     <!-- FONT-AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- GOOGLE ICON-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="style.css">
@@ -25,15 +27,21 @@
 </head>
 
 <body>
+  <!--
+  <iframe src='https://louislugas.com/projects/coal-oligarchs/index.html' style='width:100%;height:570px;' scrolling='no' frameborder="0" allowfullscreen></iframe>
     <div class='container game-container'>
-        <!--TRANSITION-->
+    -->
+    <div class='full-toggle'>
+      <i id='full-exit' class="material-icons">fullscreen_exit</i>
+      <i id='full' class="material-icons">fullscreen</i>
+    </div>
         <div class='transition'></div>
         <!--WIN-LOSE-NEW CHARACTER-->
         <div class='container win-container'>
-        <div class='winlose'>
-            <img class='win-img' src="https://i.ibb.co/dPBS4kz/coal-oligarchy-the-game-title-LOGO.png" alt="coal-oligarchy-the-game-title-LOGO" border="0">
+          <div class='winlose'>
+              <img class='win-img' src="https://i.ibb.co/dPBS4kz/coal-oligarchy-the-game-title-LOGO.png" alt="coal-oligarchy-the-game-title-LOGO" border="0">
           </div>
-      </div>
+        </div>
         <!--GAME-->
         <div class='container input-container'>
           <label class='fnamelabel' for="fname">TULIS NAMAMU:</label>
@@ -45,9 +53,9 @@
             <img class='title-img' src="img/title.png" alt="coal-oligarchy-the-game-title-LOGO" border="0">
           </div>
           <div class='btn play-btn'>MULAI</div>
-            <!--
-          <div class='btn full-btn'>FULL SCREEN</div>
-            -->
+          <!---->
+            <div class='btn full-btn'>FULL SCREEN</div>
+          <!---->
         </div>
         <div class='container intro-container'>
           <div class='intro'>
@@ -74,7 +82,7 @@
             <div class='intro-nav-btn'id='intro-skip'>SKIP</div>
           </div>
         </div>
-        <div class='link-container'>
+        <div class='container link-container'>
       
         <div class='stripe-background'>
           <div class='dummy'></div>
@@ -88,7 +96,7 @@
           <div class='sel-sel'>PILIH</div>
         </div>
       </div>
-        <div class='card-container'>
+        <div class='container card-container'>
         <div class='card-top'>
           <div class='card-flipper'>
             <div class='card-flipper-inner'>
@@ -147,7 +155,7 @@
           <div class='fight-button'>LAWAN</div>
         </div>
       </div>
-        <div class='article-container'>
+        <div class='container article-container'>
         <div class='article'>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ullamcorper sollicitudin nisl id feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur sollicitudin cursus. Nunc volutpat est ac turpis efficitur, id imperdiet massa egestas. Proin lacinia ligula id dolor venenatis venenatis. Mauris augue libero, viverra sit amet accumsan sit amet, porta in erat. Duis vestibulum justo vel lacinia rutrum. Morbi in rutrum turpis. Proin sagittis tortor id ante commodo dignissim. Aenean fringilla sed risus eu facilisis. Nullam vestibulum vitae tellus eget iaculis. Proin a velit dapibus, imperdiet mauris eget, pharetra dolor. Nunc pellentesque scelerisque nibh in maximus.
       
@@ -163,7 +171,7 @@
         </div>
         <div class='art-back-button'>KEMBALI</div>
       </div>
-        <div class='fight-container'>
+        <div class='container fight-container'>
           <div class='zig-zag'></div>
           <div class='statusbar'>
             <div class='status status-left'>
@@ -232,7 +240,10 @@
         </a>
         <div class='btn back-btn'>KEMBALI</div>
       </div>
-    </div>
+
+        <!--TRANSITION-->
+        
+
 
 <!-- CUSTOM JS -->
 <script src="main.min.js" type="text/javascript"></script>

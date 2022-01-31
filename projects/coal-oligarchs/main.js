@@ -1375,23 +1375,43 @@ function randomizer(multiplier) {
 
 //FULL SCREEN
 var fullscreen = $('.full-btn')
-var game = $('.game-container')
+var fullscreen2= $('#full')
+var fullexit   = $('#full-exit')
+var game = document.documentElement
 
 fullscreen.click(()=> {
   openFullscreen(game)
-  console.log('full 1')
-  console.log('1',  game)
+})
+
+fullscreen2.click(()=> {
+  openFullscreen(game)
+})
+
+fullexit.click(()=> {
+  closeFullscreen()
 })
 
 /* Function to open fullscreen mode */
 function openFullscreen(elem) {
-  console.log('full 2')
-  console.log('2',  elem)
+  fullexit.css('display','block')
+  fullscreen2.css('display','none')
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.webkitRequestFullscreen) { /* Safari */
     elem.webkitRequestFullscreen();
   } else if (elem.msRequestFullscreen) { /* IE11 */
     elem.msRequestFullscreen();
+  }
+}
+
+function closeFullscreen() {
+  fullexit.css('display','none')
+  fullscreen2.css('display','block')
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
   }
 }
