@@ -29,45 +29,69 @@
 
     <title>Katla Helper</title>
 </head>
-    <!--EXACT LETTER-->
-    <div class="input first-input">
-        <div class="inner inner-first-1">
-        Huruf
+<body>
+    <article class="container">
+        <!--EXACT LETTER-->
+        <div class="input first-input">
+            <div class="inner inner-first-1">
+            Huruf sesuai posisi:
+            </div>
+            <div class="inner inner-first-2">
+                <input type="text" class="letterinput" id="fname1" name="fname1" maxlength="1">
+                <input type="text" class="letterinput" id="fname2" name="fname2" maxlength="1">
+                <input type="text" class="letterinput" id="fname3" name="fname3" maxlength="1">
+                <input type="text" class="letterinput" id="fname4" name="fname4" maxlength="1">
+                <input type="text" class="letterinput" id="fname5" name="fname5" maxlength="1">
+            </div>
+            
         </div>
-        <div class="inner inner-first-2">
-            <input type="text" class="letterinput" id="fname1" name="fname1" maxlength="1">
-            <input type="text" class="letterinput" id="fname2" name="fname2" maxlength="1">
-            <input type="text" class="letterinput" id="fname3" name="fname3" maxlength="1">
-            <input type="text" class="letterinput" id="fname4" name="fname4" maxlength="1">
-            <input type="text" class="letterinput" id="fname5" name="fname5" maxlength="1">
+
+        <!--INCLUDE LETTER-->
+        <div class="input second-input">
+            <div class="inner inner-first-1">
+                Termasuk huruf (posisi bebas):
+            </div>
+            <div class="inner inner-first-2">
+                <input type="text" class="include" id="include" name="fname6">
+            </div>
         </div>
         
-    </div>
+        <!--EXCLUDE LETTER-->
+        <div class="input second-input">
+            <div class="inner inner-first-1">
+                Tidak termasuk huruf:
+            </div>
+            <div class="inner inner-first-2">
+                <input type="text" class="exclude" id="exclude" name="fname7">
+            </div>
+        </div>
+        
+        <!--SUBMIT BUTTON-->
+        <div class="input submit-input">
+            <input type="button" class="submit" value="SUBMIT">
+        </div>
 
-    <!--INCLUDE LETTER-->
-    <div class="input second-input">
-        <div class="inner inner-first-1">
-            Huruf
+        <!--RESULT-->
+        <div class="result">
+            <div class="column" id="c-1">
+                <ul id="ul-1">
+
+                </ul>
+            </div>
+            <div class="column" id="c-2">
+                <ul id="ul-2">
+
+                </ul>
+            </div>
+            <div class="column" id="c-3">
+                <ul id="ul-3">
+
+                </ul>
+            </div>
+
         </div>
-        <div class="inner inner-first-2">
-            <input type="text" class="include" id="include" name="fname6">
-        </div>
-    </div>
+    </article>
     
-    <!--EXCLUDE LETTER-->
-    <div class="input second-input">
-        <div class="inner inner-first-1">
-            Huruf
-        </div>
-        <div class="inner inner-first-2">
-            <input type="text" class="exclude" id="exclude" name="fname7">
-        </div>
-    </div>
-    
-    <!--SUBMIT BUTTON-->
-    <div class="input submit-input">
-        <input type="button" class="submit" value="SUBMIT">
-    </div>
     
     
     <script src="main.js" ></script>
