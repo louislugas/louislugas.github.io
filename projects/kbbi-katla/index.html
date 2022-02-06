@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!--CUSTOM CSS-->
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+    <!--D3-FORMAT-->
+    <script src="https://d3js.org/d3-format.v2.min.js"></script>
+
+    <!--JQUERY-->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+
+    <!--THREE-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!--D3-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js'></script>
+
+    <title>Katla Helper</title>
+</head>
+    <!--EXACT LETTER-->
+    <div class="input first-input">
+        <div class="inner inner-first-1">
+        Huruf
+        </div>
+        <div class="inner inner-first-2">
+            <input type="text" class="letterinput" id="fname1" name="fname1" maxlength="1">
+            <input type="text" class="letterinput" id="fname2" name="fname2" maxlength="1">
+            <input type="text" class="letterinput" id="fname3" name="fname3" maxlength="1">
+            <input type="text" class="letterinput" id="fname4" name="fname4" maxlength="1">
+            <input type="text" class="letterinput" id="fname5" name="fname5" maxlength="1">
+        </div>
+        
+    </div>
+
+    <!--INCLUDE LETTER-->
+    <div class="input second-input">
+        <div class="inner inner-first-1">
+            Huruf
+        </div>
+        <div class="inner inner-first-2">
+            <input type="text" class="include" id="include" name="fname6">
+        </div>
+    </div>
+    
+    <!--EXCLUDE LETTER-->
+    <div class="input second-input">
+        <div class="inner inner-first-1">
+            Huruf
+        </div>
+        <div class="inner inner-first-2">
+            <input type="text" class="exclude" id="exclude" name="fname7">
+        </div>
+    </div>
+    
+    <!--SUBMIT BUTTON-->
+    <div class="input submit-input">
+        <input type="button" class="submit" value="SUBMIT">
+    </div>
+    
+    
+    <script src="main.js" ></script>
+</body>
+</html>

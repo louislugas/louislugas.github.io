@@ -1,0 +1,54 @@
+body {
+    margin:0;
+}
+.input {
+    font-family: sans-serif;
+    font-size:4rem;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.inner-first-1 {
+    font-size:2rem;
+}
+.inner-first-2 {
+    display: flex;
+    justify-content: center;
+}
+.letterinput {
+    font-size:4rem;
+    width:4rem;
+    text-align: center;
+    margin:1rem;
+}
+.exclude, .include{
+    font-size: 4rem;
+    width:30rem;
+}
+
+@media screen and (max-width:600px) {
+    .letterinput {
+        font-size:3rem;
+        width:3rem;
+        margin:0.5rem;
+    }
+    .exclude, .include {
+        font-size: 3rem;
+        width:21rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .letterinput {
+        font-size:3rem;
+        width:3rem;
+        margin:0.2rem;
+    }
+    .exclude, .include {
+        font-size: 3rem;
+        width:18.6rem;
+    }
+}
