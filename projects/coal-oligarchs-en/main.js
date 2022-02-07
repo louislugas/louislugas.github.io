@@ -28,199 +28,199 @@ var zodiacimg = $('.z-img')
 //Aburizal Bakrie
 var quest1 = [
   {
-    'q':'Siapa produsen batubara terbesar di Indonesia?',
+    'q':"Who's the largest coal producer in Indonesia?",
     'a':'PT Kaltim Prima Coal',
     'b':'PT Bukit Asam',
     'ans':'a'
   },
   {
-    'q':'Siapa CEO PT Kaltim Prima Coal, produsen batubara terbesar di Indonesia?',
-    'a':"Adika Nuraga Bakrie (Anak Aburizal Bakrie)",
-    'b':"Boy Thohir (Saudara Erick Thohir)",
+    'q':"Who's the CEO of PT Kaltim Prima Coal, the largest coal producer in Indonesia?",
+    'a':"Adika Nuraga Bakrie (son of Aburizal Bakrie)",
+    'b':"Boy Thohir (older brother of Erick Thohir)",
     'ans':'a'
   },
   {
-    'q':'Induk perusahaan batubara terbesar di Indonesia yang memproduksi 81,1 juta ton tahun 2020 adalah...',
+    'q':"Who's Indonesia's biggest coal holding company that produced 81.1 million tons of coal in 2020?",
     'a':'PT Bumi Resources',
-    'b':'PT Sinar Mas',
+    'b':'Sinar Mas Mining Group',
     'ans':'a'
   },
   {
-    'q':'Berikut ini adalah anak usaha PT Bumi Resources, kecuali...',
-    'a':'PT Dian Swastika, PT Agung Sentosa, & PT Karya Anak Bangsa',
-    'b':'PT Kaltim Prima Coal, PT Arutnim Indonesia, & PT Pendopo Energi Batubara',
+    'q':"All of the following are subsidiaries of PT Bumi Resources, except...",
+    'a':"PT Dian Swastika, PT Agung Sentosa, and PT Karya Anak Bangsa",
+    'b':"PT Kaltim Prima Coal, PT Arutmin Indonesia, and PT Pendopo Energi Batubara",
     'ans':'a'
   }
 ]
 //Agus Lasmono
 var quest2 = [
   {
-    'q':'PT Indika Energy memiliki lahan batubara di Kalimantan Timur dan Kalimantan Tengah yang luasnya lebih dari luas ibu kota Jakarta.',
-    'a':'Benar',
-    'b':'Salah',
+    'q':"PT Indika Energy has coal mining concessions in East and Central Kalimantan covering a combined area bigger than Jakarta.",
+    'a':'True',
+    'b':'False',
     'ans':'a'
   },
   {
-    'q':'Siapa pemilik PT Indika Energy yang memproduksi 34,3 juta ton batubara pada 2020?',
+    'q':"Who's the owner of PT Indika Energy, Indonesia's fourth largest coal holding company in 2020?",
     'a':'Agus Lasmono',
-    'b':'Agus Magelangan',
+    'b':'Benny Subianto',
     'ans':'a'
   },
   {
-    'q':'Berapa jumlah produksi batubara PT Indika Energy milik Agung Lasmono pada tahun 2020?',
-    'a':'43,3 juta ton',
-    'b':'34,3 juta ton',
+    'q':"How many tons of coal did PT Indika Energy produce in 2020?",
+    'a':'30.2 million tons',
+    'b':'34.3 million tons',
     'ans':'b'
   }
 ]
 //Edwin Soeryadjaya
 var quest3 = [
   {
-    'q':'Pada akhir 2020, Edwin memiliki 65,82% saham langsung dan tidak langsung di Saratoga dan memiliki 3,29% saham di Adaro Energy.',
-    'a':'Salah',
-    'b':'Benar',
+    'q':"As of 2020, Edwin Soeryadjaya held direct and indirect shares totaling 65.82% in PT Saratoga Investama Sedaya, which controls PT Adaro Energy.",
+    'a':'False',
+    'b':'True',
     'ans':'b'
   },
   {
-    'q':'Indonesia diperkirakan kehilangan pemasukan pajak 125 juta dolar AS tahun 2009-2017, karena Adaro Energy diduga memindahkan keuntungan ke anak perusahaan di luar negeri.',
-    'a':'Salah',
-    'b':'Benar',
+    'q':"Indonesia might have lost US$125 million in corporate income tax as PT Adaro Energy allegedly moved its profits offshore in the 2009-2017 period.",
+    'a':'False',
+    'b':'True',
     'ans':'b'
   },
   {
-    'q':'Lahan PT Adaro Energy ada di beberapa daerah ini kecuali..',
-    'a':'Sumatera Utara & Bengkulu',
-    'b':'Queensland Australia & Sumatera Selatan',
+    'q':"All of the following are locations of PT Adaro Energy's coal mining operations, except…",
+    'a':'North Sumatra & Bengkulu',
+    'b':'Queensland in Australia & South Sumatra in Indonesia',
     'ans':'a'
   }
 ]
 //Fuganto Widjaja
 var quest4 = [
   {
-    'q':'Berapa jumlah produksi batubara Sinar Mas Mining Group 2020?',
-    'a':'60 juta ton',
-    'b':'50 juta ton',
+    'q':'How many tons of coal did Sinar Mas Mining Group produce in 2020?',
+    'a':'60 million tons',
+    'b':'50 million tons',
     'ans':'a'
   },
   {
-    'q':'Siapa bos Sinar Mas Mining Group yang memiliki luas area produksi mencapai 278.802,8 hektare?',
+    'q':"Who's the CEO of Sinar Mas Mining, Indonesia's second largest coal holding company in 2020?",
     'a':'Sandiaga Uno',
     'b':'Fuganto Widjaja',
     'ans':'b'
   },
   {
-    'q':'Berapa luas area operasi tambang batubara milik Sinar Mas Mining Group?',
-    'a':'278.802 ha',
-    'b':'316.619 ha',
+    'q':"How big is Sinar Mas Mining Group's total coal mining area?",
+    'a':'278,802 hectares',
+    'b':'316,619 hectares',
     'ans':'a'
   }
 ]
 //Garibaldi "Boy" Thohir
 var quest5 = [
   {
-    'q':'Berapa persen kepemilikan saham langsung Boy Thohir di Adaro Energy?',
-    'a':'43,91%',
-    'b':'6,18%',
+    'q':"How big is Garibaldi Thohir's direct ownership stake in PT Adaro Energy?",
+    'a':'43.91%',
+    'b':'6.18%',
     'ans':'b'
   },
   {
-    'q':'Erick Thohir adalah saudara kandung Boy Thohir, bos batubara Adaro Energy.',
-    'a':'Benar',
-    'b':'Salah',
+    'q':"Erick Thohir is the younger brother of Garibaldi Thohir, the CEO of PT Adaro Energy.",
+    'a':'True',
+    'b':'False',
     'ans':'a'
   },
   {
-    'q':'Sebelum berganti nama menjadi PT Adaro Energy, apa nama perusahaan batubara milik Boy Thohir?',
+    'q':"What's the original name of Garibaldi Thohir's coal mining company before being changed to PT Adaro Energy?",
     'a':'PT Padang Karunia',
-    'b':'PT Mencari Cinta Sejati',
+    'b':'PT Lonely But Happy',
     'ans':'a'
   }
 ]
 //Low Tuck Kwong
 var quest6 = [
   {
-    'q':'Siapa pemilik PT Bayan Resources yang memiliki 126.293 ha lahan batubara di Kalimantan Timur dan Kalimantan Selatan?',
+    'q':"Who's the owner of PT Bayan Resources, which has coal mining concessions measuring 126,293 hectares in East and South Kalimantan?",
     'a':'Aburizal Bakrie',
     'b':'Low Tuck Kwong',
     'ans':'b'
   },
   {
-    'q':'Berapa jumlah produksi batubara PT Bayan Resources milik Low Tuck Kwong pada 2020?',
-    'a':'34,3 juta ton',
-    'b':'30,2 juta ton',
+    'q':"How many tons of coal did PT Bayan Resources produce in 2020?",
+    'a':'34.3 million tons',
+    'b':'30.2 million tons',
     'ans':'b'
   },
   {
-    'q':'Berapa persen kepemilikan saham Low Tuck Kwong di Bayan Resources?',
-    'a':'29,03%',
-    'b':'55,2%',
+    'q':"How big is Low Tuck Kwong's ownership stake in PT Bayan Resources?",
+    'a':'29.03%',
+    'b':'55.2%',
     'ans':'b'
   }
 ]
 //Luhut Binsar Pandjaitan
 var quest7 = [
   {
-    'q':'Luhut Binsar Pandjaitan memiliki bisnis batubara.',
-    'a':'Benar',
-    'b':'Salah',
+    'q':"What's Luhut Binsar Pandjaitan's official title in President Joko Widodo's second-term Cabinet?",
+    'a':"Coordinating Minister for Maritime Affairs and Investment",
+    'b':"Coordinating Minister for All Affairs",
     'ans':'a'
   },
   {
-    'q':'Apa nama perusahaan Luhut Binsar Pandjaitan yang bergerak di bidang tambang batubara?',
+    'q':"What's the name of Luhut Binsar Pandjaitan's coal mining company?",
     'a':'PT Rakabu Sejahtra',
     'b':'PT TBS Energi Utama',
     'ans':'b'
   },
   {
-    'q':'Berapa luas lahan batubara milik Luhut Binsar Pandjaitan di Kalimantan Timur?',
-    'a':'14.019 ha',
-    'b':'76.120 ha',
+    'q':"How big are Luhut Binsar Pandjaitan's coal mining concessions in East Kalimantan?",
+    'a':'14,019 hectares',
+    'b':'76,120 hectares',
     'ans':'a'
   },
   {
-    'q':'Laksamana Marsetio, penasihat khusus bidang pertahanan dan keamanan Luhut adalah wakil komisaris utama PT Berau Coal Energy, anak perusahaan Sinar Mas.',
-    'a':'Benar',
-    'b':'Salah',
+    'q':"Marsetio, Luhut's defense and security advisor, serves as vice-president commissioner at PT Berau Coal Energy, a part of Sinar Mas Mining Group.",
+    'a':'True',
+    'b':'False',
     'ans':'a'
   }
 ]
 //Prabowo Subianto
 var quest8 = [
   {
-    'q':'Berapa luas lahan batubara di Kalimantan Timur yang dimiliki Prabowo lewat Grup Nusantara?',
-    'a':'62.753 ha',
-    'b':'278.802 ha',
+    'q':"How big are Prabowo Subianto's coal mining concessions in East Kalimantan?",
+    'a':'At least 62,753 hectares',
+    'b':'At least 278,802 hectares',
     'ans':'a'
   },
   {
-    'q':'Apa zodiak Prabowo Subianto?',
+    'q':"What's Prabowo Subianto's zodiac sign?",
     'a':'Libra',
     'b':'Gemini',
     'ans':'a'
   },
   {
-    'q':'Sandiaga Uno pernah maju menjadi calon wakil presiden mendampingi Prabowo Subianto sebagai calon presiden pada Pilpres 2019.',
-    'a':'Benar',
-    'b':'Salah',
+    'q':"Sandiaga Uno was Prabowo Subianto's running mate in Indonesia's 2019 presidential election.",
+    'a':'True',
+    'b':'False',
     'ans':'a'
   }
 ]
 //Sandiaga Uno
 var quest9 = [
   {
-    'q':'Berapa luas area operasi tambang batubara milik PT Adaro Energy?',
-    'a':'278.802 ha',
-    'b':'316.619 ha',
+    'q':"How big are PT Adaro Energy's coal mining concessions?",
+    'a':'278,802 hectares',
+    'b':'316,619 hectares',
     'ans':'b'
   },
   {
-    'q':'Pada tahun 2020 Sandiaga Uno memiliki saham sebesar 21,51 persen di Saratoga, sebuah perusahaan yang memegang 58,46 persen saham di PT Adaro Energi.',
-    'a':'Benar',
-    'b':'Salah',
+    'q':"As of 2020, Sandiaga Uno directly held a 21.51% stake in PT Saratoga Investama Sedaya, which controls PT Adaro Energy.",
+    'a':'True',
+    'b':'False',
     'ans':'a'
   },
   {
-    'q':'Tahun berapa Saratoga (perusahaan milik Sandiaga Uno) berinvestasi ke Grup Adaro yang kini menjadi induk usaha batubara terbesar ketiga di Indonesia?',
+    'q':"When did PT Saratoga Investama Sedaya (co-founded by Sandiaga Uno) start investing in Adaro Group, Indonesia's third largest coal business group in 2020?",
     'a':'2002',
     'b':'1991',
     'ans':'a'
@@ -229,21 +229,21 @@ var quest9 = [
 //Erick Thohir
 var quest10 = [
   {
-    'q':'Selain memiliki relasi bisnis batubara lewat kakaknya, Boy Thohir, Erick Thohir juga dikenal sebagai pengusaha di bidang...',
-    'a':'Media & Olahraga',
-    'b':'Rokok & Kayu',
+    'q':"Apart from his role as State-Owned Enterprises Minister, Erick Thohir is also known as a media tycoon and sports group investor.",
+    'a':'True',
+    'b':'False',
     'ans':'a'
   },
   {
-    'q':'MIND ID merupakan bisnis BUMN di bidang batubara yang memiliki lahan batubara seluas 109.985 ha di Sumsel, Sumbar, Riau, Jambi, Kaltim, dan Kalsel.',
-    'a':'Salah',
-    'b':'Benar',
+    'q':"MIND ID is a holding company for several state-owned mining firms with a total coal production of 25.15 million tons in 2020.",
+    'a':'False',
+    'b':'True',
     'ans':'b'
   },
   {
-    'q':'Erick Thohir merupakan anggota dari ormas apa?',
+    'q':"What's the name of a paramilitary organization affiliated with Erick Thohir?",
     'a':'Banser',
-    'b':'Densus',
+    'b':'Pancasila Youth (locally known as Pemuda Pancasila)',
     'ans':'a'
   }
 ]
@@ -612,12 +612,12 @@ var data = [
   'init':1,
   'index':0,
   'zodiak':'Scorpio',
-  'card1':'<span class="strong">Mesin tempur</span> : PT Bumi Resources',
-  'card2':'<span class="strong">Daya keruk</span> : 81,1 juta ton batubara (2020)',
-  'card3':'<span class="strong">Luas wilayah</span> : 136.985 ha',
-  'card4':'<span class="strong">Jurus andalan</span> : Berenang mengarungi utang',
-  'card5':'<span class="strong">Afiliasi kekuasaan</span> : Partai Golkar',
-  'artikel':"<p>Harga saham PT Bumi Resources tercatat hanya Rp67 pada akhir Desember 2021. Padahal, ia sempat menyentuh Rp8.750 pada Juni 2008. Ini karena utang perusahaan menggunung, hingga keluarga Bakrie mesti <a style='color:#CB1E58' href='https://www.cnbcindonesia.com/market/20180919140338-17-33828/begini-cerita-keluarga-bakrie-kehilangan-kendali-di-bumi' target='_blank'>melepas sahamnya</a> pada para kreditur. Ini bagai déjà vu, karena Grup Bakrie juga sempat terlilit utang miliaran dolar AS gara-gara krisis keuangan Asia 1997. Saat itu, Ical dan keluarga terpaksa melepas sebagian besar sahamnya di PT Bakrie & Brothers, hingga porsi kepemilikan mereka menciut dari 55% jadi <a style='color:#CB1E58' href='https://industri.kontan.co.id/news/kisah-grup-bakrie-lalui-krisis-demi-krisis' target='_blank'>hanya 2,5%</a>. <br><br><p><span style='font-size:1.2rem'>Partai Golkar</span><p>Tak mungkin membahas Ical tanpa menyentuh Partai Golongan Karya (Golkar). Bakrie sempat jadi ketua umum Golkar periode 2014-2019 dan kini jadi ketua dewan pembina periode 2019-2024. Sejumlah kader partai tersebut menempati posisi strategis di pemerintahan sembari menjaga jaringan bisnis batubaranya.<br><br><p><span style='font-size:1.2rem'>Scorpio</span><p>Bagai scorpion atau kalajengking, ada kesan 'berbahaya' yang dibawa seorang skorpio, entah karena gairah, intensitas, atau gayanya yang penuh misteri. Ia menutup diri dan kehidupan pribadinya rapat-rapat serta menyukai tantangan, bahaya, dan kegelapan. Ia menunggu dengan sabar dan menyerang di saat-saat tak terduga.",
+  'card1':'<span class="strong">Earth-crushing machine</span> : PT Bumi Resources',
+  'card2':'<span class="strong">Extraction</span> : 81.1 million tons of coal (2020)',
+  'card3':'<span class="strong">Coal concessions</span> : 136,985 hectares',
+  'card4':'<span class="strong">Superpower</span> : Swimming through an ocean of debts',
+  'card5':'<span class="strong">Afiliation</span> : Golkar political party',
+  'artikel':"<p>PT Bumi Resources’ stock price stood at only Rp 67 at the end of December 2021, though it once reached Rp 8,750 in June 2008. The company’s steep value decline in the stock market has primarily been caused by the company’s piled-up debts, forcing Aburizal Bakrie and his family to <a style='color:#CB1E58' href='https://www.cnbcindonesia.com/market/20180919140338-17-33828/begini-cerita-keluarga-bakrie-kehilangan-kendali-di-bumi' target='_blank'>release their stocks</a> to their creditors. Seems like history repeats itself because the Bakrie Group has previously been trapped in a debt worth billions of US dollars due to the 1997 Asian financial crisis. At that time the Bakrie family was forced to let go of the majority of its shares in Bakrie Group’s holding company PT Bakrie and Brothers, causing its ownership percentage to shrink from 55% to merely <a style='color:#CB1E58' href='https://industri.kontan.co.id/news/kisah-grup-bakrie-lalui-krisis-demi-krisis' target='_blank'>2,5%</a>. <br><br><p><span style='font-size:1.2rem'>Golkar Party</span><p>It’s impossible to talk about Aburizal without at the same time bringing up the Golkar party. Aburizal once served as the party’s chairman for the 2014-2019 period. He currently leads the party’s advisory board, for the 2019-2024 period. Today, a number of Golkar party cadres occupy strategic governmental positions while maintaining their coal business networks.<br><br><p><span style='font-size:1.2rem'>Zodiac: Scorpio</span><p>People with a scorpio sign usually have a sinister vibe about them, whether because of their mysterious passion, intensity or style. They are highly aloof individuals, while guarding their private lives carefully. At the same time, they love challenges, danger and darkness. They will wait patiently, before pouncing to attack their enemies/prey when you least expect it.",
   'imgcard':'card-aburizal-bakrie.png',
   'imgfight':'fight-aburizal-bakrie.png'
   },
@@ -626,12 +626,12 @@ var data = [
   'init':0,
   'index':1,
   'zodiak':'Aries',
-  'card1':'<span class="strong">Mesin tempur</span> : PT Indika Energy',
-  'card2':'<span class="strong">Daya keruk</span> : 34,3 juta ton batubara (2020)',
-  'card3':'<span class="strong">Luas wilayah</span> : 76.120 ha (Kaltim, Kalteng, & Sumsel)',
-  'card4':'<span class="strong">Jurus andalan</span> : Membangkitkan bisnis sekarat',
-  'card5':'<span class="strong">Afiliasi kekuasaan</span> : Tidak diketahui',
-  'artikel':"<p>Krisis moneter 1998 merobohkan kerajaan bisnis Sudwikatmono, sepupu Presiden Soeharto. Bank Surya dan Bank Subentra miliknya ambruk, ia terpaksa melepas kepemilikan sinepleks 21 kepada rekan bisnisnya. Ia lantas meleburkan sejumlah usahanya yang nyaris bangkrut ke Grup Indika, yang dibangun Agus, anaknya, bersama Arsjad Rasjid pada tahun 1995. Lewat Indika inilah Agus memimpin kebangkitan bisnis keluarganya. Indika semula bergerak di bidang multimedia dan informatika, namun kemudian melebarkan sayap ke bisnis batubara setelah PT Indika Energy mengambil alih PT Kideco Jaya Agung pada 2004. Pada tahun 2012 Indika Energy mengambil alih dua perusahaan batubara lainnya, yakni PT Multi Tambangjaya Utama dan PT Mitra Energi Agung. <br><br><p><span style='font-size:1.2rem'>Kawannya Erick Thohir (Menteri BUMN) dan memiliki kerabat TNI yang terkoneksi dengan Prabowo Subianto (Menhan) dan partai Golkar</span><p>Sebagai bagian jejaring keluarga cendana, keluarga Agus terkoneksi dengan jaringan politik lama. Kakaknya, Tri Hanurita adalah politisi Golkar yang sempat menjadi anggota Komisi VII  DPR RI, komisi yang menangani masalah energi dan sumber daya mineral. Suami Tri adalah Mayor Jenderal TNI (Purn.) Dessano Indrasakti, staf ahli bidang ekonomi Menteri Pertahanan Prabowo Subianto yang juga memiliki bisnis batubaranya sendiri. Prabowo adalah mantan suami Siti Hediati Hariyadi, anak presiden Soeharto.<br><br><p><span style='font-size:1.2rem'>Aries</span><p>Seorang Aries biasanya penuh semangat, berapi-api, entah saat bekerja atau menjalin hubungan. Ia percaya diri dan penuh determinasi untuk mewujudkan segudang ambisi. Gayanya blak-blakan dan langsung ke inti persoalan. Karena itu, ia tak senang dengan sikap bertele-tele. Ia bisa saja beraksi dulu, berpikir kemudian, dan tak khawatir bila mesti melakukan hal-hal berbahaya.",
+  'card1':'<span class="strong">Earth-crushing machine</span> : PT Indika Energy',
+  'card2':'<span class="strong">Extraction</span> : 34.3 million tons of coal (2020)',
+  'card3':'<span class="strong">Coal concessions</span> : 76,120 hectares',
+  'card4':'<span class="strong">Superpower</span> : Reviving a dying business',
+  'card5':'<span class="strong">Afiliation</span> : Cendana family',
+  'artikel':"<p>The 1997-1998 Asian financial crisis crushed the businesses of Sudwikatmono, Agus Lasmono's father. Sudwikatmono, familiarly called Dwi, saw his Bank Subentra and Bank Surya go bankrupt. He also had to let go of his ownership of the 21 cineplex chain. Some of Dwi’s companies were then merged into the Indika Group, founded by his son Agus together with Arsjad Rasjid in 1995. Afterward, Agus led his family business revival under the Indika Group flag. The group ventured into coal business after its subsidiary, PT Indika Energy, took over PT Kideco Jaya Agung in 2004. In 2012, Indika Energy acquired two other coal miners: PT Multi Tambangjaya Utama and PT Mitra Energi Agung.<br><br><p><span style='font-size:1.2rem'>Cendana Family</span><p>Agus is a part of the notorious Cendana family, which refers to the family of former authoritarian president Soeharto. Dwi, his father, is the younger cousin of Soeharto. Tri Hanurita, his older sister, is a Golongan Karya (Golkar) party politician who once served as a member of the parliament’s Commission VII overseeing energy and mining. Tri’s husband is Dessano Indrasakti, a retired military officer who now serves as an expert staff member of Defense Minister Prabowo Subianto. Prabowo is the former husband of Siti Hediati Hariyadi a.k.a. Titiek, the second daughter of Soeharto.<br><br><p><span style='font-size:1.2rem'>Zodiac: Aries</span><p>Typically, an Aries is someone who is full of passion, fiery, in both their professions and romantic relationships alike. He is full of self-confidence and determination to make his brimming ambitions come true. He speaks bluntly, straightforwardly to the core of the problem. Understandably, he does not like people who beat around the bush. He is likely to just take an impulsive action and just think about the consequences later, and is undaunted by the prospect of doing dangerous things.",
   'imgcard':'card-agus-lasmono.png',
   'imgfight':'fight-agus-lasmono.png'
   },
@@ -640,12 +640,12 @@ var data = [
   'init':0,
   'index':2,
   'zodiak':'Cancer',
-  'card1':'<span class="strong">Mesin tempur</span> : PT Adaro Energy',
-  'card2':'<span class="strong">Daya keruk</span> : 54,53 juta ton batubara (2020)',
-  'card3':'<span class="strong">Luas wilayah</span> : 316.619 ha',
-  'card4':'<span class="strong">Jurus andalan</span> : Kartu reverse (membalik keadaan dari penuh utang jadi senang-senang)',
-  'card5':'<span class="strong">Afiliasi kekuasaan</span> : Teman bisnis Sandiaga Uno',
-  'artikel':"<p>Edwin merupakan anak dari William Soeryadjaya, konglomerat yang mendirikan grup Astra dengan PT Astra Internasional sebagai induknya. Pada tahun 1992 bisnis keluarga itu nyaris ambruk gara-gara bank Summa milik Edward, kakak Edwin, terjerat kredit macet. Sampai-sampai William menjual sahamnya di Astra untuk melunasi kewajiban bank Summa pada nasabah. Di saat bisnis keluarga sedang kesulitan, Edwin bertemu dengan Sandiaga Uno, lalu mengembangkan perusahaan investasi PT Saratoga Investama Sedaya. Saratoga pun menanamkan uang di PT Adaro Energy. Per 2020, kepemilikan Saratoga di PT Adaro Energy–induk usaha batubara Grup Adaro–tercatat menyentuh 58,46%, baik secara langsung maupun tak langsung. Pada akhir 2020, Edwin memiliki 65,82% saham langsung dan tidak langsung serta menjabat sebagai komisaris utama di Saratoga yang mengontrol Adaro Energy. Edwin pun memiliki 3,29% saham langsung dan jadi komisaris utama di Adaro Energy.<br><br><p><span style='font-size:1.2rem'>Teman bisnis Sandiaga Uno dan Boy Thohir</span><p>Edwin berteman baik dengan Sandi. Sandi berteman baik dengan Erick Thohir. Edwin memiliki 3,29% saham langsung dan jadi komisaris utama di Adaro Energy yang didirikan Boy Thohir, kakak kandung Erick Thohir. Saratoga pun memiliki saham di Adaro Energy mencapai 58,46%, baik secara langsung maupun tak langsung. Pertalian pertemanan, relasi bisnis, dan kekuasaan saling bertaut dalam relasi mereka.<br><br><p><span style='font-size:1.2rem'>Cancer</span><p>Seperti kepiting yang jadi simbol zodiak ini, seorang kanser merasa paling nyaman saat berada di cangkang atau rumahnya sendiri, atau saat berkumpul bersama orang-orang terdekatnya. Ada lapisan tebal yang membungkus dirinya, meski di dalam ia adalah pribadi yang penuh emosi dan kadang kelewat sensitif. Ia punya selera humor canggung. Ia sangat loyal dan protektif, sehingga bisa melakukan apa saja untuk melindungi keluarga dan para sahabatnya.",
+  'card1':'<span class="strong">Earth-crushing machine</span> : PT Adaro Energy',
+  'card2':'<span class="strong">Extraction</span> : 54.53 million tons of coal (2020)',
+  'card3':'<span class="strong">Coal concessions</span> : 316,619 hectares',
+  'card4':'<span class="strong">Superpower</span> : Reverse card (Reversing life direction)',
+  'card5':'<span class="strong">Afiliation</span> : Astra family',
+  'artikel':"<p>Edwin is the son of tycoon William Soeryadjaya, the founder of diversified conglomerate Astra Group. In the 1990s, William was forced to sell his shares in Astra to help settle Bank Summa's responsibilities to its customers. Bank Summa, previously owned by Edward (Edwin's older brother), went bankrupt due to poor governance. During the difficult period, Edwin met Sandiaga Uno, and they agreed to collectively develop Edwin's investment company PT Saratoga Investama Sedaya. In 2002, Saratoga started investing in Adaro Group. As of 2020, Saratoga held direct and indirect shares totaling 58.46% in PT Adaro Energy (Adaro Group's coal holding company). At the same time, Edwin's direct and indirect shares in Saratoga reached 65.82%.<br><br><p><span style='font-size:1.2rem'>Astra family</span><p>Edwin is a close friend of Sandiaga, who was mentored by William while working for Bank Summa in the early 1990s. Edwin indirectly owns Adaro Energy, which is led by Garibaldi 'Boy' Thohir. Boy is the older brother of State-Owned Enterprises Minister Erick Thohir. Boy and Erick's father, Teddy Thohir, is a first-generation employee of Astra Group. Theodore Permadi Rachmat, William's nephew and Edwin's cousin, currently holds 2.54% shares in Adaro Energy. Arini Subianto, who owns 0.25% shares in Adaro Energy, is the daughter of Benny Subianto, formerly an Astra executive.<br><br><p><span style='font-size:1.2rem'>Zodiac: Cancer</span><p>Just like the crab which is the icon of this zodiac, a cancer feels most comfortable when he is inside his own shell or home, or when socializing with the closest members of his own inner circle. There is a thick wall surrounding him, although deep inside he is an emotionally volatile and hypersensitive individual. He has an awkward sense of humor. He is highly loyal and protective, capable of doing just about anything to protect his family and best friends.",
   'imgcard':'card-edwin-suryadjaya.png',
   'imgfight':'fight-edwin-suryadjaya.png'
   },
@@ -654,12 +654,12 @@ var data = [
   'init':0,
   'index':3,
   'zodiak':'Scorpio',
-  'card1':'<span class="strong">Mesin tempur</span> : Sinar Mas Mining Group',
-  'card2':'<span class="strong">Daya keruk</span> : 60 juta ton batubara (2020)',
-  'card3':'<span class="strong">Luas wilayah</span> : 278.802,8 ha',
-  'card4':'<span class="strong">Jurus andalan</span> : Mode siluman (bikin susah dilacak di Google)',
-  'card5':'<span class="strong">Afiliasi kekuasaan</span> : Menggandeng TNI di lingkaran bisnis',
-  'artikel':"<p>Selain menjadi CEO Grup Sinar Mas Mining, Fuganto memegang posisi penting di sejumlah perusahaan dalam grup. Ia adalah chairman eksekutif Golden Energy and Resources Limited, komisaris utama PT Roundhill Capital Indonesia, serta komisaris PT Golden Energy Mines dan PT Borneo Indobara. Ia juga sempat menjadi direktur utama PT Berau Coal Energy sejak Agustus 2015 hingga Juni 2021.<br><br><p><span style='font-size:1.2rem'>Menggandeng TNI di lingkaran bisnis</span><p>Suwandi, salah seorang kepercayaan keluarga Widjaja diberi jabatan direktur utama PT Berau Coal Energy dan PT Borneo Indobara. Suwandi lama berkarier di TNI Angkatan Darat dengan pangkat terakhir Mayor Jenderal. Sementara itu Marsetio, wakil komisaris utama PT Berau Coal Energy, adalah kepala staf TNI Angkatan Laut periode 2012-2015 dengan pangkat terakhir Laksamana. Marsetio saat ini adalah penasihat khusus bidang pertahanan dan keamanan Menteri Koordinator Bidang Kemaritiman dan Investasi Luhut Binsar Pandjaitan.<br><br><p><span style='font-size:1.2rem'>Scorpio</span><p>Bagai scorpion atau kalajengking, ada kesan 'berbahaya' yang dibawa seorang skorpio, entah karena gairah, intensitas, atau gayanya yang penuh misteri. Ia menutup diri dan kehidupan pribadinya rapat-rapat serta menyukai tantangan, bahaya, dan kegelapan. Ia menunggu dengan sabar dan menyerang di saat-saat tak terduga.",
+  'card1':'<span class="strong">Earth-crushing machine</span> : Sinar Mas Mining Group',
+  'card2':'<span class="strong">Extraction</span> : 60 million tons of coal (2020)',
+  'card3':'<span class="strong">Coal concessions</span> : 278,802.8 hectares',
+  'card4':'<span class="strong">Superpower</span> : Stealth mode (making it hard to Google him)',
+  'card5':'<span class="strong">Afiliation</span> : Retired military officers',
+  'artikel':"<p>Aside from serving as the Sinar Mas Mining Group CEO, Fuganto also holds an important position in several of the group’s companies. For one, he is the executive chairman of the Golden Energy and Resources Limited, president commissioner of PT Roundhill Capital Indonesia, as well as the commissioner of PT Golden Energy Mines and PT Borneo Indobara. He also served as the general director of PT Berau Coal Energy from August 2015 to June 2021.<br><br><p><span style='font-size:1.2rem'>Military Circle</span><p>Suwandi, the executive director of PT Berau Coal Energy and PT Borneo Indobara, had a long career in the Army. His last rank was Major General. Meanwhile Marsetio, the deputy chief commissioner of PT Berau Coal Energy, used to be the Navy chief of staff for the 2012-2015 period with the last rank of admiral. Currently, Marsetio serves as defense and security advisor to Coordinating Minister for Maritime Affairs and Investment Luhut Binsar Pandjaitan.<br><br><p><span style='font-size:1.2rem'>Zodiac: Scorpio</span><p>People with a scorpio sign usually have a sinister vibe about them, whether because of their mysterious passion, intensity or style. They are highly aloof individuals, while guarding their private lives carefully. At the same time, they love challenges, danger and darkness. They will wait patiently, before pouncing to attack their enemies/prey when you least expect it.",
   'imgcard':'card-fuganto-widjaja.png',
   'imgfight':'fight-fuganto-widjaja.png'
   },
@@ -668,12 +668,12 @@ var data = [
   'init':0,
   'index':4,
   'zodiak':'Taurus',
-  'card1':'<span class="strong">Mesin tempur</span> : PT Adaro Energy',
-  'card2':'<span class="strong">Daya keruk</span> : 54,53 juta ton batubara (2020)',
-  'card3':'<span class="strong">Luas wilayah</span> : 316.619 ha',
-  'card4':'<span class="strong">Jurus andalan</span> : Membangun jaringan strategis di lingkaran konglomerat & penguasa',
-  'card5':'<span class="strong">Afiliasi kekuasaan</span> : Saudaranya Erick Thohir (Menteri BUMN)',
-  'artikel':"<p>Selain lingkaran pertemanan yang saling bertaut dengan kepentingan bisnis, Boy juga membangun jaringan dengan elite penguasa. Ia akrab dengan A.M. Hendropriyono, mantan kepala Badan Intelijen Negara yang dekat dengan Ketua Umum Partai Demokrasi Indonesia Perjuangan (PDIP) Megawati Soekarnoputri. Hendropriyono sempat menjadi komisaris utama PT Merdeka Copper Gold, yang dimiliki pula oleh Saratoga dan Boy. <p>Saat ini Boy tercatat sebagai komisaris utama di Bhumi Rantau Energi milik Grup Hasnur dan komisaris independen PT Aplikasi Karya Anak Bangsa alias Gojek, yang didirikan Menteri Pendidikan, Kebudayaan, Riset dan Teknologi Nadiem Makarim.<br><br><p><span style='font-size:1.2rem'>Saudaranya Erick Thohir (Menteri BUMN)</span><p>Boy Thohir merupakan kakak dari Menteri BUMN Erick Thohir yang mengontrol Mining Industry Indonesia (MIND ID), induk bagi sejumlah perusahaan tambang milik pemerintah. Penambang batubara utama di bawah MIND ID adalah PT Bukit Asam. Selain itu, PT Timah dan PT Aneka Tambang juga memiliki usaha batubara berskala relatif kecil. Total, produksi batubara MIND ID mencapai 25,15 juta ton pada 2020.<br><br><p><span style='font-size:1.2rem'>Taurus</span><p>Seorang Taurus adalah pekerja keras yang berdedikasi dan, sering kali, keras kepala, seperti karakter banteng yang jadi simbol zodiak ini. Ia berhasrat mencapai hal-hal besar dan tak takut melakukan apa saja demi bisa memuluskan rencananya. Ia mencintai stabilitas dan menghargai kejujuran. Karena itu, sulit baginya memaafkan mereka yang ketahuan menipu atau memperdayanya.",
+  'card1':'<span class="strong">Earth-crushing machine</span> : PT Adaro Energy',
+  'card2':'<span class="strong">Extraction</span> : 54.53 million tons of coal (2020)',
+  'card3':'<span class="strong">Coal concessions</span> : 316,619 hectares',
+  'card4':'<span class="strong">Superpower</span> : Building strong networks in the circles of tycoons and government elites',
+  'card5':'<span class="strong">Afiliation</span> : State-Owned Enterprises Minister Erick Thohir',
+  'artikel':"<p>Garibaldi 'Boy' Thohir has been successful in building important networks, not only among fellow business magnates but also within the government elites. He is close to A.M. Hendropriyono, the former State Intelligence Agency head who is close to the Indonesian Democratic Party of Struggle (PDIP) chairwoman Megawati Soekarnoputri. Hendropriyono himself once served as the chief commissioner of PT Merdeka Copper Gold, which is partly owned by Boy.<br><br>In addition to his role as the executive director of coal miner PT Adaro Energy, Boy now serves as the president commissioner of Bhumi Rantau Energi, owned by the Hasnur Group, as well as the independent commissioner of PT Aplikasi Karya Anak Bangsa a.k.a. Gojek, which was established by Education, Culture, Research and Technology Minister Nadiem Makarim.<br><br><p><span style='font-size:1.2rem'>Brother of State-Owned Enterprises Minister Erick Thohir</span><p>Boy's younger brother, Erick Thohir, is the State-Owned Enterprises Minister who controls the Mining Industry Indonesia (MIND ID), a coal holding company for several government-owned mining companies. The main coal miner under the MIND ID umbrella is PT Bukit Asam. State-owned mining enterprises like PT Timah and PT Aneka Tambang also own several coal businesses, although these are relatively small-scale. MIND ID's total coal production amounted to 25.15 million tons in 2020.<br><br><p><span style='font-size:1.2rem'>Zodiac: Taurus</span><p>A Taurus is a dedicated hard worker and, oftentimes, a stubborn one, just like the bull character, which symbolizes this zodiac. He desires grand things and is not afraid to do just about anything in order to turn his plans into reality. He loves stability and values honesty. Because of this, it's hard for him to forgive those who he found had lied or deceived him.",
   'imgcard':'card-garibaldi-boy-thohir.png',
   'imgfight':'fight-garibaldi-boy-thohir.png'
   },
@@ -682,12 +682,12 @@ var data = [
   'init':0,
   'index':5,
   'zodiak':'Aries',
-  'card1':'<span class="strong">Mesin tempur</span> : PT Bayan Resources',
-  'card2':'<span class="strong">Daya keruk</span> : 30,2 juta ton batubara (2020)',
-  'card3':'<span class="strong">Luas wilayah</span> : 126.293 ha',
-  'card4':'<span class="strong">Jurus andalan</span> : Berkelit dari gugatan',
-  'card5':'<span class="strong">Afiliasi kekuasaan</span> : Tidak diketahui',
-  'artikel':"<p>Low Tuck Kwong adalah pengusaha asal Singapura yang kemudian beralih kewarganegaraan Indonesia pada tahun 90an. Ia memulai kerajaannya dari bisnis kontraktor pada tahun 1973, sebelum akhirnya merambah ke bisnis batubara pada 1988. Di tengah krisis moneter, ia melakukan ekspansi dengan mengakuisisi PT Gunungbayan Pratamacoal, yang menguasai konsesi batubara puluhan ribu hektar di Kalimantan Timur dan PT Dermaga Perkasapratama, operator batubara di provinsi yang sama. Pada tahun 2008, akuisisi PT Gunungbayan berujung gugatan dari Haji Asri, karena dianggap akuisisi itu penuh tekanan dan belum dibayar lunas. Namun hakim memutus Low tak bersalah.<p>Low juga lolos dari gugatan yang dilayangkan Taipan Sukamto Sia pada Juli 2008, sebulan sebelum Bayan Resources mencatatkan saham di Bursa Efek Indonesia. Menurut Sukamto, Low pernah berjanji memberikan 50% saham Bayan Resources untuk membalas jasa Sukamto yang meminjamkan uang kepada Low untuk memulai bisnis batubaranya di pertengahan 1990an. Kasus ini dibawa ke Pengadilan Tinggi Singapura, yang kemudian menolak gugatan Sukamto pada 2012 dan bahkan mewajibkan Sukamto membayar 132,3 juta dolar Singapura kepada Low pada 2015 karena dianggap telah melakukan pencemaran nama baik sesaat sebelum Bayan Resources melantai di bursa.<br><br><p><span style='font-size:1.2rem'>Aries</span><p>Seorang Aries biasanya penuh semangat, berapi-api, entah saat bekerja atau menjalin hubungan. Ia percaya diri dan penuh determinasi untuk mewujudkan segudang ambisi. Gayanya blak-blakan dan langsung ke inti persoalan. Karena itu, ia tak senang dengan sikap bertele-tele. Ia bisa saja beraksi dulu, berpikir kemudian, dan tak khawatir bila mesti melakukan hal-hal berbahaya.",
+  'card1':'<span class="strong">Earth-crushing machine</span> : PT Bayan Resources',
+  'card2':'<span class="strong">Extraction</span> : 30.2 million tons of coal (2020)',
+  'card3':'<span class="strong">Coal concessions</span> : 126,293 hectares',
+  'card4':'<span class="strong">Superpower</span> : Evading lawsuits',
+  'card5':'<span class="strong">Afiliation</span> : N/A',
+  'artikel':"<p>Low Tuck Kwong was born in Singapore in 1948. He moved to Indonesia at the age of 24 and soon started his own construction business. In 1998, or six years after he officially became an Indonesian citizen, Low acquired PT Gunungbayan Pratamacoal, a coal company with concessions spanning dozens of thousands of hectares in East Kalimantan, and PT Dermaga Perkasapratama, a coal terminal operator in the same province. Later in 2008, Haji Asri, the former owner of Gunungbayan, filed a lawsuit against Low, who was alleged to have not completed the entire payment for the acquisition. But, the judge found Low not guilty.<br><br>Moreover, tycoon Sukamto Sia also filed a lawsuit against Low in July 2008, a month before Low's PT Bayan Resources went public. According to Sukamto, Low promised to give 50% of the company's shares to Sukamto in exchange for a loan provided to Low to start his coal business in the mid-1990s. The case was taken to the Singaporean High Court, which later rejected Sukamto’s lawsuit in 2012 and even obliged Sukamto to pay 132.3 million in Singaporean dollar to Low in 2015 because he was deemed to have defamed Low, just before Bayan Resources was listed in the stock market.<br><br><p><span style='font-size:1.2rem'>Zodiac: Aries</span><p>Typically, an Aries is someone who is full of passion, fiery, in both their professions and romantic relationships alike. He is full of self-confidence and determination to make his brimming ambitions come true. He speaks bluntly, straightforwardly to the core of the problem. Understandably, he does not like people who beat around the bush. He is likely to just take an impulsive action and just think about the consequences later, and is undaunted by the prospect of doing dangerous things.",
   'imgcard':'card-low-tuck-kwong.png',
   'imgfight':'fight-low-tuck-kwong.png'
   },
@@ -696,12 +696,12 @@ var data = [
   'init':0,
   'index':6,
   'zodiak':'Libra',
-  'card1':'<span class="strong">Mesin tempur</span> : PT Toba Sejahtra',
-  'card2':'<span class="strong">Daya keruk</span> : 5,5 juta ton batubara (2020)',
-  'card3':'<span class="strong">Luas wilayah</span> : 14.019 ha (Kaltim)',
-  'card4':'<span class="strong">Jurus andalan</span> : Menangani sejuta urusan pada waktu bersamaan',
-  'card5':'<span class="strong">Jabatan</span> : Menteri Koordinator bidang Kemaritiman & Investasi',
-  'artikel':"<p>Luhut mendapat julukan lord oleh netizen Indonesia sebagai satire karena sepertinya segala hal di Indonesia bisa diatur oleh Luhut. Luhut memang menteri segala bisa. Saat ia menjabat sebagai Menteri Koordinator Bidang Kemaritiman pada 2016, ia sempat juga menjadi Plt. Menteri ESDM menggantikan Arcandra yang ternyata memiliki kewarganegaraan ganda.  Pada tahun 2020 ketika ia menjabat sebagai Menteri Koordinator Bidang Kemaritiman dan Investasi, ia juga sempat menjadi Plt. Menteri KKP gara-gara Edhy Prabowo diciduk KPK. Pada saat yang sama ia juga diberi mandat menjadi Wakil Ketua Komite Penanganan Covid-19 dan Pemulihan Ekonomi Nasional sekaligus koordinator PPKM Jawa-Bali.<p>Selain itu, Luhut sekarang menjabat ketua Tim Nasional Peningkatan Penggunaan Produksi Dalam Negeri, ketua Gerakan Nasional Bangga Buatan Indonesia, dan bahkan ketua Dewan Pengarah Tim Penyelamatan Danau Prioritas Nasional. Itu semua bikin Luhut dikenal sebagai 'menteri segala urusan'. <p>Untuk urusan bisnis ia menggunakan jaringan militernya di berbagai perusahaannya. Misal, ada Sumardi dan mantan Menteri Agama Fachrul Razi di dewan komisaris Toba Sejahtra. Ada Sintong Pandjaitan sebagai komisaris PT Adimitra Baratama Nusantara, serta Suaidi Marasabessy sebagai direktur utama PT Trisensa Mineral Utama dan direktur PT Kutai Energi. Tiga perusahaan itu ada di bawah Toba Sejahtra.<br><br><p><span style='font-size:1.2rem'>Menteri Koordinator bidang Kemaritiman dan Investasi</span><p>Sebelum Luhut menjadi menteri, ia sudah lebih dulu dekat dengan Jokowi. Saat itu Jokowi masih menjabat sebagai wali kota Surakarta. Mereka berdua mendirikan usaha bersama dengan bendera PT Rakabu Sejahtra yang bergerak di bidang pengolahan kayu dan ekspor hasil jadinya. Ketika Pilpres 2014, Luhut mundur dari partai Golkar untuk mendukung Jokowi menjadi calon presiden. Pilihannya tepat, Jokowi menang dan Luhut pun mendapat tempat di pemerintah yang memungkinnya memainkan peran penting. Sejumlah jabatan yang pernah ia pegang yakni Kepala Staf Kepresidenan pada 2014, lalu menjadi Menteri Koordinator Bidang Politik, Hukum, dan Keamanan pada 2015, lalu digeser menjadi Menteri Koordinator Bidang Kemaritiman pada 2016. Setelah Pilpres 2019, Luhut kembali mendapat posisi penting yakni menjadi Menteri Koordinator Bidang Kemaritiman dan Investasi. <br><br><p><span style='font-size:1.2rem'>Libra</span><p>Seorang Libra biasanya penuh keseimbangan. Ia diplomatis dan lihai mencari titik temu yang bisa menyatukan pihak-pihak yang berseteru. Ia pandai bergaul dan senang berkumpul bersama siapa saja. Salah satu kebiasaan buruk seorang Libra adalah gemar mengasihani diri sendiri dan merasa dunia berputar di sekelilingnya. Maka, saat sesuatu berjalan tak sesuai rencana, ia bisa jadi begitu dramatis dan menganggap semua sedang berkomplot untuk menjatuhkannya.",
+  'card1':'<span class="strong">Earth-crushing machine</span> : PT Toba Sejahtra',
+  'card2':'<span class="strong">Extraction</span> : 5.5 million tons of coal (2020)',
+  'card3':'<span class="strong">Coal concessions</span> : 14,019 hectares',
+  'card4':'<span class="strong">Superpower</span> : Handling millions of problems simultaneously',
+  'card5':"<span class='strong'>Jabatan</span> : Indonesia's National Military, Golkar political party",
+  "artikel":"<p>Luhut Binsar Pandjaitan is nicknamed 'Lord' by Indonesian netizens as it seems that he's capable of handling everything. He is a true all-rounder.<p>When Luhut served as Coordinating Minister for Maritime Affairs in 2016, he was appointed the acting Energy and Mineral Resources Minister after Arcandra Tahar was sacked for holding dual citizenship. In 2020, during his time as Coordinating Minister for Maritime Affairs and Investment, Luhut also briefly served as the acting Maritime and Fisheries Affairs Minister after Edhy Prabowo was arrested by anti-graft officials. In the same year, he was appointed deputy chairman of the Covid-19 Mitigation and National Economic Recovery Task Force.<p>In addition, Luhut now serves as the chairman of the Domestic Production Utilization Optimization National Team, the chairman of the Proud of Indonesian Products National Movement, and even the chairman of the National Priority Lake Rescue team. All that has earned Luhut the title of “Coordinating Minister for All Affairs”.<p>Luhut has placed a number of his military acquaintances across his various companies. To name a few: Sumardi and former Religious Affairs minister Fachrul Razi in PT Toba Sejahtra's board of commissioners. Moreover, Sintong Pandjaitan serves as PT Adimitra Baratama Nusantara commissioner, while Suaidi Marasabessy serves as PT Trisensa Mineral Utama executive director and PT Kutai Energi director. The last three companies operate under Toba Sejahtra.<br><br><p><span style='font-size:1.2rem'>Close Relationship With President Joko Widodo</span><p>Luhut has been close to President Joko “Jokowi” Widodo since the latter still served as the mayor of Surakarta, Central Java. Back then, the two formed a joint venture called PT Rakabu Sejahtra. This company manufactures wood and exports its final products. Up until today, Luhut's Toba Sejahtra is still Rakabu Sejahtra's biggest shareholder.<p>No wonder Luhut resigned from the Golongan Karya (Golkar) party to support Jokowi during the 2014 presidential election. It was a significant move considering at that time, Luhut was serving as the chief of Golkar national leadership office's board of advisors. He made the right choice. Jokowi won and became the president. Since then, Luhut has been playing an important role in the government.<br><br><p><span style='font-size:1.2rem'>Zodiac: Libra</span><p>A Libra is typically a highly balanced person. He is diplomatic and is tactful in finding common grounds which can unite opposing parties. He has great social skills and is happy to hang out with all sorts of people. One of the negative traits possessed by a Libra is to indulge in self-pity and feel as if the world revolves around him. Therefore, when things do not go according to plan, he starts creating drama, under the delusion that everyone is conspiring to bring him down.",
   'imgcard':'card-luhut-binsar-pandjaitan.png',
   'imgfight':'fight-luhut-binsar-pandjaitan.png'
   },
@@ -710,12 +710,12 @@ var data = [
   'init':0,
   'index':7,
   'zodiak':'Libra',
-  'card1':'<span class="strong">Mesin tempur</span> : Grup Nusantara',
-  'card2':'<span class="strong">Daya keruk</span> : Penuh misteri',
-  'card3':'<span class="strong">Luas wilayah</span> : 62.753 ha (2019)',
-  'card4':'<span class="strong">Jurus andalan</span> : Berkuda mengejar mimpi',
-  'card5':'<span class="strong">Jabatan</span> : Menteri Pertahanan & Ketua Umum Partai Gerindra',
-  'artikel':"<p>Sebagai menantu keluarga cendana, karir Prabowo di militer begitu mulus. Namun itu tidak bertahan lama, setelah mertuanya, Soeharto mundur sebagai presiden setelah 32 tahun menjabat, karir militer Prabowo remuk. Penculikan aktivis yang dilakukan Prabowo bersama Tim Mawar pada 1998 membuatnya diberhentikan dari militer. Setelah kehilangan kekuatan, Prabowo pergi dari Indonesia. Ia sempat tinggal di Yordania, Jerman, dan Malaysia sebelum kembali ke Indonesia pada tahun 2000. Sejak itu ia mulai mengembangkan bisnis, menjajal peruntungan di politik, sembari menekuni hobi berkuda. Pada 2004 ia menjajal ikut konvensi calon presiden Partai Golkar, namun kalah di putaran pertama. Pada tahun 2008 ia mendirikan partai Gerindra, lalu maju menjadi calon wakil presiden mendampingi Megawati Soekarnoputri sebagai calon presiden pada pilpres 2009, namun kalah. Berturut-turut pada tahun 2014 dan 2019 ia maju sebagai calon presiden, namun juga kalah.<br><br><p><span style='font-size:1.2rem'>Menteri Pertahanan dan Pemilik Partai Gerindra</span><p>Setelah dikalahkan dua kali oleh Jokowi dalam Pilpres 2014 dan 2019, Prabowo akhirnya memutuskan bergabung dengan koalisi pemerintah setelah selama 10 tahun menjadi oposisi. Ia mendapat jabatan sebagai menteri pertahanan, sedangkan Sandiaga Uno, pasangannya dalam Pilpres 2019 mendapat jabatan sebagai menteri pariwisata dan ekonomi kreatif pada 2020.<br><br><p><span style='font-size:1.2rem'>Libra</span><p>Seorang Libra biasanya penuh keseimbangan. Ia diplomatis dan lihai mencari titik temu yang bisa menyatukan pihak-pihak yang berseteru. Ia pandai bergaul dan senang berkumpul bersama siapa saja. Salah satu kebiasaan buruk seorang Libra adalah gemar mengasihani diri sendiri dan merasa dunia berputar di sekelilingnya. Maka, saat sesuatu berjalan tak sesuai rencana, ia bisa jadi begitu dramatis dan menganggap semua sedang berkomplot untuk menjatuhkannya.",
+  'card1':'<span class="strong">Earth-crushing machine</span> : Nusantara Group',
+  'card2':'<span class="strong">Extraction</span> : N/A',
+  'card3':'<span class="strong">Coal concessions</span> : (At least) 62,753 ha (2019)',
+  'card4':'<span class="strong">Superpower</span> : Chasing dreams while riding a horse',
+  'card5':"<span class='strong'>Jabatan</span> : Indonesia's National Military, Gerindra political party",
+  'artikel':"<p>As the son-in-law of former authoritarian president Soeharto, Prabowo Subianto was able to build a brilliant career in Indonesia's National Military. However, he was dismissed from his military duties in August 1998 as a consequence of his involvement in the abduction of prodemocracy activists about six months before. Afterward, Prabowo decided to live abroad, including in Jordan, Germany and Malaysia, before returning to Indonesia in 2000. He then started building his business empire and political power base, while pursuing his horse riding hobby.<p>Prabowo joined the Golongan Karya (Golkar) party's presidential candidate convention ahead of the 2004 presidential election, only to lose in the first round. He founded the Great Indonesian Movement (Gerindra) party in 2008 and became Megawati Soekarnoputri's running mate during the 2009 presidential election. They lost. Prabowo then ran for office as a presidential candidate two times, during the 2014 and 2019 presidential elections, with Hatta Rajasa and Sandiaga Uno as his running mates, respectively. He also lost in those rounds. Yet, President Joko Widodo still gave him his lot in the cabinet. He was appointed Defense Minister for the 2019-2024 period.<br><br><p><span style='font-size:1.2rem'>Zodiac: Libra</span><p>A Libra is typically a highly balanced person. He is diplomatic and is tactful in finding common grounds which can unite opposing parties. He has great social skills and is happy to hang out with all sorts of people. One of the negative traits possessed by a Libra is to indulge in self-pity and feel as if the world revolves around him. Therefore, when things do not go according to plan, he starts creating drama, under the delusion that everyone is conspiring to bring him down.",
   'imgcard':'card-prabowo-subianto.png',
   'imgfight':'fight-prabowo-subianto.png'
   },
@@ -724,12 +724,12 @@ var data = [
   'init':0,
   'index':8,
   'zodiak':'Cancer',
-  'card1':'<span class="strong">Mesin tempur</span> : PT Adaro Energy',
-  'card2':'<span class="strong">Daya keruk</span> : 54,53 juta ton batubara (2020)',
-  'card3':'<span class="strong">Luas wilayah</span> : 316.619 ha',
-  'card4':'<span class="strong">Jurus andalan</span> : Menjadi viral dengan tingkah kosong',
-  'card5':'<span class="strong">Jabatan</span> : Menteri Pariwisata & Ekonomi Kreatif & Wakil Ketua Dewan Pembina partai Gerindra',
-  'artikel':"<p>Nama Sandi mencuat di publik saat ia maju bersama Anies Baswedan dalam Pilkada DKI Jakarta 2017. Mereka menang, namun baru satu tahun menjabat Sandi memilih mundur dan maju menjadi calon wakil Presiden bersama Prabowo Subianto. Selama masa kampanye itu, Sandi kerap bertingkah konyol sehingga viral di media sosial. Dalam Pilpres 2019 itu ia beda kubu politik dengan karibnya, Erick Thohir yang menjadi ketua tim pemenangan Jokowi-Maruf Amin. <br><br><p><span style='font-size:1.2rem'>Relasi bisnis</span><p>Pada 2002, PT Saratoga Investama Sedaya yang dibangun Sandi bersama Edwin Soeryadjaya mulai berinvestasi di Grup Adaro yang kini dipimpin Garibaldi “Boy” Thohir, kakak dari Menteri Badan Usaha Milik Negara Erick Thohir. Per 2020, kepemilikan Saratoga di PT Adaro Energy–induk usaha batubara Grup Adaro–tercatat menyentuh 58,46%, baik secara langsung maupun tak langsung.<br><br><p><span style='font-size:1.2rem'>Menteri Pariwisata dan Ekonomi Kreatif dan Wakil Ketua Dewan Pembina partai Gerindra</span><p>Begitu pesta demokrasi selesai, partai Gerindra memutuskan bergabung dengan koalisi pemerintah. Sandi pun mendapat posisi sebagai menteri Pariwisata dan Ekonomi Kreatif sejak akhir 2020. Sampai saat ini Sandi juga menjabat wakil ketua dewan pembina Partai Gerindra, yang masih dipimpin Prabowo. Sama seperti Sandi, Prabowo memiliki bisnis batubaranya sendiri melalui Grup Nusantara.<br><br><p><span style='font-size:1.2rem'>Cancer</span><p>Seperti kepiting yang jadi simbol zodiak ini, seorang kanser merasa paling nyaman saat berada di cangkang atau rumahnya sendiri, atau saat berkumpul bersama orang-orang terdekatnya. Ada lapisan tebal yang membungkus dirinya, meski di dalam ia adalah pribadi yang penuh emosi dan kadang kelewat sensitif. Ia punya selera humor canggung. Ia sangat loyal dan protektif, sehingga bisa melakukan apa saja untuk melindungi keluarga dan para sahabatnya.",
+  'card1':'<span class="strong">Earth-crushing machine</span> : PT Adaro Energy',
+  'card2':'<span class="strong">Extraction</span> : 54.53 million tons of coal (2020)',
+  'card3':'<span class="strong">Coal concessions</span> : 316,619 hectares',
+  'card4':'<span class="strong">Superpower</span> : Going viral with silly acts',
+  'card5':'<span class="strong">Jabatan</span> : Astra family, Gerindra political party',
+  'artikel':"<p>Sandiaga Uno entered the public spotlight when he and Anies Baswedan were running for office in the 2017 Jakarta gubernatorial election. They won. Yet, after serving as Jakarta deputy governor for only a year, Sandiaga resigned from his position to become Prabowo Subianto's running mate in the 2019 presidential election. During the presidential campaign, Sandiaga often did meaningless, silly things that paved way for him to go viral on social media.<br><br><p><span style='font-size:1.2rem'>Business Networks</span><p>In 1998, Sandiaga joined hands with Edwin Soeryadjaya, a son of tycoon William Soeryadjaya, to develop investment company PT Saratoga Investama Sedaya. In 2002, Saratoga began investing in Adaro Group, which is currently led by Garibaldi “Boy” Thohir, the older brother of State-Owned Enterprises Minister Erick Thohir. As of 2020, Saratoga held direct and indirect shares totaling 58.46% in PT Adaro Energy (Adaro Group's coal holding company).<br><br><p><span style='font-size:1.2rem'>Roles in Cabinet and Gerindra Party</span><p>After Prabowo and Sandiaga lost in the 2019 presidential election, each got a slot in the cabinet. Prabowo has become Defense Minister since the end of 2019, while Sandiaga has served as the Tourism and Creative Economy Minister since the end of 2020.<p>Currently, Sandi also serves as the board of advisors' deputy chairman for the Great Indonesian Movement (Gerindra) Party, with Prabowo as the chairman.<br><br><p><span style='font-size:1.2rem'>Zodiac: Cancer</span><p>Just like the crab which is the icon of this zodiac, a cancer feels most comfortable when he is inside his own shell or home, or when socializing with the closest members of his own inner circle. There is a thick wall surrounding him, although deep inside he is an emotionally volatile and hypersensitive individual. He has an awkward sense of humor. He is highly loyal and protective, capable of doing just about anything to protect his family and best friends.",
   'imgcard':'card-sandiaga-uno.png',
   'imgfight':'fight-sandiaga-uno.png'
   },
@@ -738,12 +738,12 @@ var data = [
   'init':0,
   'index':9,
   'zodiak':'Gemini',
-  'card1':'<span class="strong">Mesin tempur</span> : Mining Industry Indonesia (MIND ID)',
-  'card2':'<span class="strong">Daya keruk</span> : 25,15 juta ton batubara (2020)',
-  'card3':'<span class="strong">Luas wilayah</span> : 109.985 ha',
-  'card4':'<span class="strong">Jurus andalan</span> : Bongkar pasang direksi BUMN',
-  'card5':'<span class="strong">Jabatan</span> : Menteri BUMN',
-  'artikel':"<p>Sejak menjabat sebagai Menteri BUMN, Erick Thohir banyak melakukan bongkar pasang direksi BUMN. Pada Desember 2021 Erick membongkar direksi anak perusahaan MIND ID seperti PT Aneka Tambang Tbk, PT Timah Tbk, dan PT Bukit Asam Tbk. Kocok ulang jabatan ini dimulai dari direktur utama MIND ID yang semula dijabat Orias Petrus Moedak diganti Hendi Prio Santoso yang sebelumnya direktur utama PT Semen Indonesia Tbk. Lalu dilanjutkan dengan pergantian direktur utama PT Timah Tbk dari M Riza Pahlevi Tabrani menjadi Achmad Ardianto, direktur keuangan dari M Krisna Sjarif menjadi Wibisono, direktur SDM dari Muhammad Rizki menjadi Yennita, Direktur Pengembangan Usaha Alwin Albar diganti Purwoko. Pada jajaran komisaris, PT Timah Tbk memberhentikan dengan hormat Rudy Suhendar. Kemudian, perseroan menambah anggota komisaris yang terdiri dari Yudo Dwinanda Priadi dan Danny Praditya.<br><br><p><span style='font-size:1.2rem'>Menteri BUMN</span><p>Kesuksesan Erick Thohir sebagai ketua panitia pelaksanaan Asian Games 2018 membuat namanya melambung. Ia pun dilirik Jokowi untuk menjadi ketua pemenangan kampanye pada pilpres 2019. Keberhasilan Erick mengantarkan kemenangan Jokowi dalam pilpres 2019 membuatnya dihadiahi jabatan elite sebagai menteri BUMN. <br><br><p><span style='font-size:1.2rem'>Gemini</span><p>Seorang Gemini biasanya penuh gairah hidup. Ia senang sekali bergaul, berbagi cerita, dan bergosip (jangan ceritakan rahasia Anda kepadanya). Makanya, ia sering jadi pusat perhatian. Ia mudah beradaptasi dengan situasi dan gemar mencoba hal-hal baru. Bisa dikatakan, ia adalah pribadi yang impulsif. Ia bisa hilang fokus di tengah jalan dan tiba-tiba mengambil keputusan sembrono. Ia cerdas, tapi kadang kelewat analitis sehingga jadi terkesan tak tegas.",
+  'card1':'<span class="strong">Earth-crushing machine</span> : Mining Industry Indonesia (MIND ID)',
+  'card2':'<span class="strong">Extraction</span> : 25.15 million tons of coal (2020)',
+  'card3':'<span class="strong">Coal concessions</span> : 109,985 hectares',
+  'card4':'<span class="strong">Superpower</span> : Reshuffling state-owned enterprises’ board of directors',
+  'card5':'<span class="strong">Jabatan</span> : The US Connection',
+  'artikel':"<p>Since Erick Thohir was appointed State-Owned Enterprises Minister in 2019, he has overhauled the board of directors and commissioners of various SOEs, including Mining Industry Indonesia (MIND ID), a holding company for several state-backed mining firms.<p>In December 2021, for instance, Erick reshuffled the leadership of MIND ID and its subsidiary PT Timah. Hendi Prio Santoso replaced Orias Petrus Moedak as MIND ID president director. Furthermore, Achmad Ardianto was appointed Timah president director, replacing M. Riza Pahlevi Tabrani.<br><br><p><span style='font-size:1.2rem'>2018 Asian Games Success</span><p>Erick is a media tycoon and sports group investor. The media industry plays an important role in shaping and maintaining public opinion, while the sports scene offers a very large base of supporters. No wonder, after Eric successfully accomplished his duties as the committee chairman of the 2018 Asian Games, his name was catapulted into fame. After Joko Widodo won the 2019 presidential election, Erick was appointed SOEs Minister.<br><br><p><span style='font-size:1.2rem'>The US Connection</span><p>Erick attained a Master’s Degree in business administration in the United States in 1993. A year after this, upon his return to Indonesia, he founded the Mahaka Group together with three of his friends who, like him, went to study in the Uncle Sam’s country: Muhammad Lutfi, Wishnu Wardhana and Harry Zulnardy. Lutfi currently serves as Trade Minister. Erick is also a close friend of Arsjad Rasyid, another US-educated businessman. Wishnu and Arsjad now control coal holding company PT Indika Energy.<br><br><p><span style='font-size:1.2rem'>Zodiac: Gemini</span><p>A Gemini is typically bustling with a lust for life. He loves to socialize, sharing stories and gossip (don’t you ever tell him any of your secrets). No wonder, he often turns into the center of attention. He could easily adapt to new situations and loves to try new things. Fair to say, he is an impulsive character. It’s possible for him to lose his focus in the middle of doing something and all of a sudden make a haphazard decision. He’s intelligent, but sometimes he can be overly analytical, making him seem indecisive.",
   'imgcard':'card-erick-thohir.png',
   'imgfight':'fight-erick-thohir.png'
   }
