@@ -32,7 +32,7 @@ d3.csv(url)
             letter5th = letter5.val().toLowerCase()
             letterinc = letincl.val().toLowerCase()
             letterexc = letexcl.val().toLowerCase()
-            console.log(letter1st, letter2nd, letter3rd, letter4th, letter5th)
+            //console.log(letter1st, letter2nd, letter3rd, letter4th, letter5th)
 
             // filter by exact letter position
             const filtered = data.filter((d) => {
@@ -81,16 +81,16 @@ d3.csv(url)
                 })
             }
                 
-            console.log(filtered)
-            console.log(include)
-            console.log(exclude)
+            //console.log(filtered)
+            //console.log(include)
+            //console.log(exclude)
 
             let printlen = exclude.length
             let divide = Math.ceil(printlen/3)
             let len1 = divide
             let len2 = 2 * divide
             let len3 = printlen - (len2)
-            console.log(printlen,len1, len2, len3)
+            //console.log(printlen,len1, len2, len3)
 
             $('.list').remove()
 
