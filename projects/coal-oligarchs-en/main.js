@@ -321,7 +321,7 @@ go.click(()=> {
 go2.click(()=> {
   let inputval = $('#fname').val()
   if (inputval=="") {
-    alert('Nama belum diisi')
+    alert('Name field can not be empty')
   } else {
     localStorage.setItem('player',inputval)
     transition.css('display', 'block')
@@ -1148,7 +1148,7 @@ submit.click(()=> {//answer
     //check if answer selected
     if(sel=='00') {
       //jawaban belum dipilih sama sekali, tidak ada pilihan berwarna hijau
-      alert('Pilih Jawaban!')
+      alert('Choose your answer!')
     } else
     if (sel!='00') {
     //selection checker
