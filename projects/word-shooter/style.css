@@ -1,0 +1,14 @@
+body {
+    margin:0;
+}
+
+.word {
+    font-family:sans-serif;
+    font-size:3rem;
+}
+
+#point, #score {
+    font-family:sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
