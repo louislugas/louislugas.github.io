@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Waste Calculator</title>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet" /> -->
+    <!-- PRELOAD ALL IMAGE -->
+    <link rel="preload" as="image" href="./images/items/buah.png">
+    <link rel="preload" as="image" href="./images/items/sayuran.png">
+    <link rel="preload" as="image" href="./images/items/biji-bijian.png">
+    <link rel="preload" as="image" href="./images/items/rempah.png">
+    <link rel="preload" as="image" href="./images/items/protein.png">
+    <link rel="preload" as="image" href="./images/items/karbo.png">
+    <link rel="preload" as="image" href="./images/items/bumbukemasan.png">
+    <link rel="preload" as="image" href="./images/items/sayurmatang.png">
+    <link rel="preload" as="image" href="./images/items/makanankemasan.png">
+    <link rel="preload" as="image" href="./images/items/kuahsaus.png">
+    <link rel="preload" as="image" href="./images/items/minumankemasan.png">
+    <link rel="preload" as="image" href="./images/items/tepung.png">
+  </head>
+  <body>
+    <!-- CONTAINER -->
+    <div class="container d-flex align-items-center min-vh-100">
+      <!-- FORMS -->
+      <div class="col align-self-center offset-lg-4 mx-0 px-0">
+        <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 0%"></div>
+        </div>
+        <div id="qbox-container">
+          <form class="needs-validation" id="form-wrapper" method="post" name="form-wrapper" novalidate="">
+            <div id="steps-container">
+              <!-- PAGE 1 -- INTRO -- CURRENT STEP = 0 -->
+              <div class="step text-center">
+                <h1 class="fw-bolder">Berapa banyak makanan yang kamu buang kemarin?</h1>
+                <h4 class="fw-bold">Mari kita cari tahu</h4>
+                <div class="mt-1">
+                  <label class="form-label">Masukan namamu:</label>
+                  <input class="form-control text-center fs-3" id="namamu" name="namamu" type="text" placeholder="Ayaka Kamisato" />
+                </div>
+              </div>
+              <!-- PAGE 2 -- INPUT DATA -- CURRENT STEP = 1 -->
+              <div class="step">
+                <h4 id="page2-text">
+                  Coba ingat-ingat, <span class="fw-bolder">$NAMAMU$</span>. Kemarin, apa saja makanan yang mestinya masih bisa kamu makan, tapi tidak bisa kamu habiskan dan terpaksa kamu buang dari kulkas atau piringmu? Tentu tidak termasuk duri ikan, tulang ayam, lengkuas yang menyamar jadi daging rendang atau sejenisnya (non-edible), ya!
+                </h4>
+                <!-- DAFTAR MAKANAN -->
+                <div class="row mb-3">
+                  <!-- 1 BUAH-BUAHAN -->
+                  <div class="container mb-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row row-cols-2 row-cols-md-4">
+                          <div class="col d-flex align-items-center">
+                            <img src="./images/items/buah.png" id='imgBuah' class="rounded" alt="" />
+                          </div>
+                          <div class="col d-flex flex-column justify-content-center">
+                            <p class="fs-5 mb-1 fw-bold lh-sm" id="buah">Buah</p>
+                            <p class="fs-6 mb-0 fw-light lh-base">Apel, mangga, pisang, dll</p>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                              <div class="mb-3">
+                                <input type="number" class="form-control" name="jumlahId" id="jumlahBuah" aria-describedby="jumlahId" value="0" />
+                                <small id="jumlahId" class="form-text text-muted"></small>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                              <select class="form-select" name="satuan" id="satuanBuah">
+                                <option selected>pilih satuan</option>
+                                <option value="gram">gram</option>
+                                <option value="kilogram">kilogram</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2 SAYURAN MENTAH -->
+                  <div class="container mb-2" >
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row row-cols-2 row-cols-md-4">
+                          <div class="col d-flex align-items-center">
+                            <img src="./images/items/sayuran.png" id='imgSayur' class="rounded" alt="" />
+                          </div>
+                          <div class="col d-flex flex-column justify-content-center">
+                            <p class="fs-5 mb-1 fw-bold lh-sm" id="sayur">Sayuran mentah</p>
+                            <p class="fs-6 mb-0 fw-light lh-base">Selada, sawi, bayam, tomat, dll</p>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="jumlahId" id="jumlahSayur" aria-describedby="jumlahId" value="0" />
+                                <small id="jumlahId" class="form-text text-muted"></small>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                              <select class="form-select" name="satuan" id="satuanSayur">
+                                <option selected>pilih satuan</option>
+                                <option value="ikat">ikat</option>
+                                <option value="butir">butir</option>
+                                <option value="gram">gram</option>
+                                <option value="kilogram">kilogram</option>
+                                <option value="potong">potong</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3 BIJI-BIJIAN -->
+                  <div class="container mb-2" >
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row row-cols-2 row-cols-md-4">
+                          <div class="col d-flex align-items-center">
+                            <img src="./images/items/biji-bijian.png" id='imgBiji'class="rounded" alt="" />
+                          </div>
+                          <div class="col d-flex flex-column justify-content-center">
+                            <p class="fs-5 mb-1 fw-bold lh-sm" id="biji">Biji-bijian</p>
+                            <p class="fs-6 mb-0 fw-light lh-base">Beras, kacang, jagung kering, dll</p>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="jumlahId" id="jumlahBiji" aria-describedby="jumlahId" value="0" />
+                                <small id="jumlahId" class="form-text text-muted"></small>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                              <select class="form-select" name="satuan" id="satuanBiji">
+                                <option selected>pilih satuan</option>
+                                <option value="gram">gram</option>
+                                <option value="kilogram">kilogram</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 4 REMPAH -->
+                  <div class="container mb-2" >
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row row-cols-2 row-cols-md-4">
+                          <div class="col d-flex align-items-center">
+                            <img src="./images/items/rempah.png" id='imgRempah' class="rounded" alt="" />
+                          </div>
+                          <div class="col d-flex flex-column justify-content-center">
+                            <p class="fs-5 mb-1 fw-bold lh-sm" id="rempah">Rempah mentah</p>
+                            <p class="fs-6 mb-0 fw-light lh-base">Lengkuas, bawang, daun salam, dll</p>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                              <div class="mb-3">
+                                <input type="number" class="form-control" name="jumlahId" id="jumlahRempah" aria-describedby="jumlahId" value="0" />
+                                <small id="jumlahId" class="form-text text-muted"></small>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                              <select class="form-select" name="satuan" id="satuanRempah">
+                                <option selected>pilih satuan</option>
+                                <option value="butir">butir</option>
+                                <option value="gram">gram</option>
+                                <option value="kilogram">kilogram</option>
+                                <option value="potong">potong</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 5 PROTEIN -->
+                  <div class="container mb-2" >
+                    <div class="card">
+                      <div class="card-body justify-content-center">
+                        <div class="row row-cols-2 row-cols-md-4">
+                          <div class="col d-flex align-items-center">
+                            <img src="./images/items/protein.png" id='imgProtein' class="rounded" alt="" />
+                          </div>
+                          <div class="col d-flex flex-column justify-content-center">
+                            <p class="fs-5 mb-1 fw-bold lh-sm" id="protein">Protein (hewani & nabati)</p>
+                            <p class="fs-6 mb-0 fw-light lh-base">Ikan, ayam, tahu, telur, dll</p>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                              <div class="mb-3">
+                                <input type="number" class="form-control" name="jumlahId" id="jumlahProtein" aria-describedby="jumlahId" value="0" />
+                                <small id="jumlahId" class="form-text text-muted"></small>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                              <select class="form-select" name="satuan" id="satuanProtein">
+                                <option selected>pilih satuan</option>
+                                <option value="gram">gram</option>
+                                <option value="kilogram">kilogram</option>
+                                <option value="potong">potong</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 6 KARBOHIDRAT -->
+                  <div class="container mb-2"  >
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row row-cols-2 row-cols-md-4">
+                          <div class="col d-flex align-items-center">
+                            <img src="./images/items/karbo.png" id='imgKarbo' class="rounded" alt="" />
+                          </div>
+                          <div class="col d-flex flex-column justify-content-center">
+                            <p class="fs-5 mb-1 fw-bold lh-sm" id="karbo">Karbohidrat</p>
+                            <p class="fs-6 mb-0 fw-light lh-base">Nasi, mie, roti, ketela, dll</p>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="jumlahId" id="jumlahKarbo" aria-describedby="jumlahId" value="0" />
+                                <small id="jumlahId" class="form-text text-muted"></small>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                              <select class="form-select" name="satuan" id="satuanKarbo">
+                                <option selected>pilih satuan</option>
+                                <option value="gram">gram</option>
+                                <option value="kilogram">kilogram</option>
+                                <option value="sendok makan">sendok makan</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <!-- 7 BUMBU-->
+                  <div class="container mb-2" >
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row row-cols-2 row-cols-md-4">
+                          <div class="col d-flex align-items-center">
+                            <img src="./images/items/bumbukemasan.png" id='imgBumbu' class="rounded" alt="" />
+                          </div>
+                          <div class="col d-flex flex-column justify-content-center">
+                            <p class="fs-5 mb-1 fw-bold lh-sm" id="bumbu">Bumbu dalam kemasan</p>
+                            <p class="fs-6 mb-0 fw-light lh-base">Kecap, gula, margarin, selai, dll</p>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="jumlahId" id="jumlahBumbu" aria-describedby="jumlahId" value="0" />
+                                <small id="jumlahId" class="form-text text-muted"></small>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                              <select class="form-select" name="satuan" id="satuanBumbu">
+                                <option selected>pilih satuan</option>
+                                <option value="gram">gram</option>
+                                <option value="kilogram">kilogram</option>
+                                <option value="sendok makan">sendok makan</option>
+                                <option value="mililiter">mililiter</option>
+                                <option value="liter">liter</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 8 KUAH -->
+                  <div class="container mb-2" >
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row row-cols-2 row-cols-md-4">
+                          <div class="col d-flex align-items-center">
+                            <img src="./images/items/kuahsaus.png" id='imgKuah' class="rounded" alt="" />
+                          </div>
+                          <div class="col d-flex flex-column justify-content-center">
+                            <p class="fs-5 mb-1 fw-bold lh-sm" id="kuah">Kuah & Saus</p>
+                            <p class="fs-6 mb-0 fw-light lh-base">Kuah sisa masakan, sambal, dll</p>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="jumlahId" id="jumlahKuah" aria-describedby="jumlahId" value="0" />
+                                <small id="jumlahId" class="form-text text-muted"></small>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                              <select class="form-select" name="satuan" id="satuanKuah">
+                                <option selected>pilih satuan</option>
+                                <option value="sendok makan">sendok makan</option>
+                                <option value="gelas belimbing">gelas belimbing</option>
+                                <option value="mililiter">mililiter</option>
+                                <option value="liter">liter</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 9 SAYUR MATANG -->
+                  <div class="container mb-2" >
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row row-cols-2 row-cols-md-4">
+                          <div class="col d-flex align-items-center">
+                            <img src="./images/items/sayurmatang.png" id='imgSayurOlah' class="rounded" alt="" />
+                          </div>
+                          <div class="col d-flex flex-column justify-content-center">
+                            <p class="fs-5 mb-1 fw-bold lh-sm" id="sayurolah">Sayur olahan</p>
+                            <p class="fs-6 mb-0 fw-light lh-base">Sayur sisa tumisan, rebusan, salad, dll</p>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="jumlahId" id="jumlahSayurOlah" aria-describedby="jumlahId" value="0" />
+                                <small id="jumlahId" class="form-text text-muted"></small>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                              <select class="form-select" name="satuan" id="satuanSayurOlah">
+                                <option selected>pilih satuan</option>
+                                <option value="gram">gram</option>
+                                <option value="kilogram">kilogram</option>
+                                <option value="sendok makan">sendok makan</option>
+                                <option value="gelas belimbing">gelas belimbing</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 10 MAKANAN KEMASAN -->
+                  <div class="container mb-2" >
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row row-cols-2 row-cols-md-4">
+                          <div class="col d-flex align-items-center">
+                            <img src="./images/items/makanankemasan.png" id='imgMakananKemasan' class="rounded" alt="" />
+                          </div>
+                          <div class="col d-flex flex-column justify-content-center">
+                            <p class="fs-5 mb-1 fw-bold lh-sm" id="makanankemasan">Makanan dalam Kemasan</p>
+                            <p class="fs-6 mb-0 fw-light lh-base">Keripik, makanan kaleng, biskuit, dll</p>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="jumlahId" id="jumlahMakananKemasan" aria-describedby="jumlahId" value="0" />
+                                <small id="jumlahId" class="form-text text-muted"></small>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                              <select class="form-select" name="satuan" id="satuanMakananKemasan">
+                                <option selected>pilih satuan</option>
+                                <option value="gram">gram</option>
+                                <option value="kilogram">kilogram</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 11 MINUMAN KEMASAN -->
+                  <div class="container mb-2" >
+                    <div class="card">
+                      <div class="card-body justify-content-center">
+                        <div class="row row-cols-2 row-cols-md-4">
+                          <div class="col">
+                            <img src="./images/items/minumankemasan.png" id='imgMinumanKemasan'class="rounded" alt="" />
+                          </div>
+                          <div class="col d-flex flex-column justify-content-center">
+                            <p class="fs-5 mb-1 fw-bold lh-sm" id="minumankemasan">Minuman dalam Kemasan</p>
+                            <p class="fs-6 mb-0 fw-light lh-base">Susu, sari buah, minuman kaleng, dll</p>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="jumlahId" id="jumlahMinumanKemasan" aria-describedby="jumlahId" value="0" />
+                                <small id="jumlahId" class="form-text text-muted"></small>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                              <select class="form-select" name="satuan" id="satuanMinumanKemasan">
+                                <option selected>pilih satuan</option>
+                                <option value="sendok makan">sendok makan</option>
+                                <option value="gelas belimbing">gelas belimbing</option>
+                                <option value="mililiter">mililiter</option>
+                                <option value="liter">liter</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 12 PRODUK TEPUNG -->
+                  <div class="container mb-2" >
+                    <div class="card">
+                      <div class="card-body justify-content-center">
+                        <div class="row row-cols-2 row-cols-md-4">
+                          <div class="col d-flex align-items-center">
+                            <img src="./images/items/tepung.png" id='imgBubuk' class="rounded" alt="" />
+                          </div>
+                          <div class="col d-flex flex-column justify-content-center">
+                            <p class="fs-5 mb-1 fw-bold lh-sm" id="bubuk">Produk bubuk</p>
+                            <p class="fs-6 mb-0 fw-light lh-base">Tepung, susu bubuk, lada bubuk, dll</p>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="jumlahId" id="jumlahBubuk" aria-describedby="jumlahId" value="0" />
+                                <small id="jumlahId" class="form-text text-muted"></small>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-center">
+                            <div class="mb-3">
+                              <select class="form-select" name="satuan" id="satuanBubuk">
+                                <option selected>pilih satuan</option>
+                                <option value="gram">gram</option>
+                                <option value="kilogram">kilogram</option>
+                                <option value="sendok makan">sendok makan</option>
+                                <option value="gelas belimbing">gelas belimbing</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- PAGE 3 -- REKAP DATA -- CURRENT STEP = 2 -->
+              <div class="step">
+                <h4 id="page3-text"><span class="fw-bolder">$NAMAMU$</span>, berikut adalah makanan yang kamu singkirkan kemarin. Tenang, kita semua pernah berada dalam dilema yang sama :’)</h4>
+                <div class="row mb-3" id="recap">
+                  
+                </div>
+              </div>
+              <!-- PAGE 4 -- HASIL -- CURRENT STEP = 3 -->
+              <div id="success">
+                <div class="mt-5">
+                  <h4 id="page4-text">
+                    <span class="fw-bolder">$NAMAMU$</span>, tahu nggak? [jumlah rekap sebelumnya] 1 ikat kangkung dan 3 butir buah yang kamu buang itu setara dengan xxxx gram dalam 1 hari.yang kamu buang tadi, itu berarti XXX
+                    kilogram dalam 1 minggu, dan XXX dalam kilogram dalam 1 bulan.
+                  </h4>
+                  <p>Punchline Message.</p>
+                  <a class="back-link" href="">Main Lagi ➜</a>
+                </div>
+              </div>
+            </div>
+            <div id="q-box__buttons">
+              <button id="prev-btn" type="button">Balik</button>
+              <button id="next-btn" type="button">Lanjut</button>
+              <button id="submit-btn" type="submit">Hitung</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRELOADER -->
+    <div id="preloader-wrapper">
+      <div id="preloader"></div>
+      <div class="preloader-section section-left"></div>
+      <div class="preloader-section section-right"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
