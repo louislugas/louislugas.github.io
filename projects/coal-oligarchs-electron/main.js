@@ -1336,17 +1336,14 @@ backreset.click(()=>{
 reset.click(()=>{
   level = 0
   data.forEach((d, i)=> {
-    if ( i == 0 ) {
-      d.init = 1
-    } else {
-      d.init = 0
-    }
+    d.init = 0
   })
+data[0].init = 1
   updateLink()
   transition.css('display', 'block')
   setTimeout(() => {
       cont6.css('display','none')
-      cont4.css('display','flex')
+      cont1.css('display','flex')
   }, 1000);
   setTimeout(wipeOut, 0)
   setTimeout(wipeIn, 1000)
