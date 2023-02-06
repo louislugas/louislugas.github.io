@@ -1343,6 +1343,7 @@ data[0].init = 1
   transition.css('display', 'block')
   setTimeout(() => {
       cont6.css('display','none')
+      cont4.css('display','none')
       cont1.css('display','flex')
   }, 1000);
   setTimeout(wipeOut, 0)
