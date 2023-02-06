@@ -22,6 +22,7 @@ var enemyName = $('.name-right')
 var playerName = $('.name-left')
 var profile = $('.profile')
 var backreset = $('.back-btn')
+var reset = $('.reset')
 var zodiacimg = $('.z-img')
 
 //question
@@ -418,7 +419,7 @@ function updateLink() {
   circus // update circle color & cursor by level
   .style('fill',(d,i)=> {
     let init = d.init
-    if (init==0) {
+    if (init == 0) {
       return '#101025'
     } else {
       return '#DE5341'
@@ -426,7 +427,7 @@ function updateLink() {
   })
   .style('cursor',(d,i)=> {
     let init = d.init
-    if (init==0) {
+    if (init == 0) {
       return 'no-drop'
     } else {
       return 'pointer'
@@ -1331,6 +1332,30 @@ backreset.click(()=>{
 
 })
 
+//kembali ke halaman utama
+reset.click(()=>{
+  level = 0
+  data.forEach((d, i)=> {
+    if ( i == 0 ) {
+      d.init = 1
+    } else {
+      d.init = 0
+    }
+  })
+  updateLink()
+  transition.css('display', 'block')
+  setTimeout(() => {
+      cont6.css('display','none')
+      cont4.css('display','flex')
+  }, 1000);
+  setTimeout(wipeOut, 0)
+  setTimeout(wipeIn, 1000)
+  setTimeout(() => {
+      transition.css('display','none')
+  }, 2000);
+
+})
+
 answer1.click(()=> {
   sel = 'ca1'
   toggleButton(answer1, answer2)
@@ -1388,7 +1413,13 @@ fullscreen2.click(()=> {
 })
 
 fullexit.click(()=> {
-  closeFullscreen()
+  let fill = prompt("prompt", "")
+		if (fill == "password") {
+			closeFullscreen()
+		} else {
+			
+		}
+  
 })
 
 /* Function to open fullscreen mode */
